@@ -1,3 +1,42 @@
 /*=====================
   Медиа выражения
 =====================*/
+
+@media (max-width: 1024px) {
+
+	.icon-href{
+		display: block;
+	}
+	
+}
+
+@media (max-width: 450px) {
+
+	.icon-href{
+		display: none;
+	}
+
+	.main-page-top{
+
+		.underline-href{
+			font-size: 24px;
+		}
+	}
+
+	.main-page-bottom{
+
+		.underline-href{
+			font-size: 20px;
+		}
+	}
+
+	.main-h1{
+		font-size: 40px;
+	}
+
+	.main-h2{
+		font-size: 20px;
+		word-spacing: 0px;
+	}
+	
+}

@@ -30,6 +30,7 @@
 
 	.underline-href{
 		position: relative;
+		font-size: 40px;
 
 		&:hover{
 			.icon-href{
@@ -43,7 +44,6 @@
 	background: $main-top-background;
 
 	.underline-href{
-		font-size: 40px;
 		color: $main-top-color;
 
 		@include underline-href-colors($main-top-color, $main-top-background, 3px, 95%);
@@ -54,7 +54,6 @@
 	background: $main-bottom-background;
 
 	.underline-href{
-		font-size: 40px;
 		color: $main-bottom-color;
 
 		@include underline-href-colors($main-bottom-color, $main-bottom-background, 3px, 92%);
@@ -87,11 +86,6 @@
 	color: $main-bottom-color;
 	letter-spacing: 5px;
 	word-spacing: 10px;
-}
-
-.svg-main-top{
-	fill: $main-top-color;
-	width: 100px;
 }
 
 .icon-href{
