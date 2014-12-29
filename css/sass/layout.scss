@@ -106,3 +106,23 @@
 .icon-bottom{
 	bottom: 46px;
 }
+
+
+// Для анимации svg
+
+.path-1,
+.path-2,
+.path-3,
+.path-4{
+
+	stroke-width: 1px;
+	stroke: $main-top-color;
+}
+
+.path-5,
+.path-6,
+.path-7,
+.path-8{
+	stroke-width: 1px;
+	stroke: $main-bottom-color;
+}

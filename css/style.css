@@ -545,6 +545,16 @@ form {
 .icon-bottom {
   bottom: 46px; }
 
+/* line 116, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+.path-1, .path-2, .path-3, .path-4 {
+  stroke-width: 1px;
+  stroke: #dcdcdc; }
+
+/* line 125, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+.path-5, .path-6, .path-7, .path-8 {
+  stroke-width: 1px;
+  stroke: #333; }
+
 /*=====================
   Медиа выражения
 =====================*/
