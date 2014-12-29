@@ -75,13 +75,13 @@
 }
 
 .main-h1{
-	@include avenir-bold;
+	@include get-font("bold");
 	font-size: 70px;
 	color: $main-top-color;
 }
 
 .main-h2{
-	@include avenir;
+	@include get-font("regular");
 	font-size: 24px;
 	color: $main-bottom-color;
 	letter-spacing: 5px;

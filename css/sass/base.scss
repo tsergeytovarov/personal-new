@@ -218,34 +218,31 @@ $main-bottom-background: #ccc;
 }
 
 /* шрифтовые классы */
-@mixin avenir{
-  font-family: 'avenir', sans-serif;
-  font-weight: 400;
-}
-
-@mixin avenir-bold{
-  font-family: 'avenir-bold', sans-serif;
-  font-weight: 800;
-}
-
-@mixin avenir-medium{
-  font-family: 'avenir-mefium', sans-serif;
-  font-weight: 600;
-}
-
-@mixin avenir-light{
-  font-family: 'avenir-light', sans-serif;
-  font-weight: 300;
+@mixin get-font($type){
+  @if $type == "regular" {
+    font-family: 'avenir', sans-serif;
+    font-weight: 400;
+  }
+  @else if $type == "medium" {
+    font-family: 'avenir-medium', sans-serif;
+    font-weight: 600;
+  }
+  @else if $type == "bold" {
+    font-family: 'avenir-bold', sans-serif;
+  }
+  @else if $type == "light" {
+    font-family: 'avenir-light', sans-serif;
+    font-weight: 300;
+  }
 }
 
 
 body{
-  @include avenir;
+  @include get-font("regular");
   font-size: 14px;
 }
 
 h1{
-  
 }
 h2{
   
