@@ -151,12 +151,21 @@ i, .ico{
     vertical-align: middle;
 }
 
+.table-row{
+  display: table-row;
+}
+
 
 /*=====================
   Цвета
 =====================*/
 
-$black: #242424;
+/* main page*/
+$main-top-color: #fff;
+$main-top-background: #aaa;
+
+$main-bottom-color: #fff;
+$main-bottom-background: #ccc;
 
 
 /*=====================
@@ -233,7 +242,6 @@ $black: #242424;
 body{
   @include avenir;
   font-size: 14px;
-  line-height: 20px;
 }
 
 h1{
