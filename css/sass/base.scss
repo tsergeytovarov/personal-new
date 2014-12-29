@@ -1,0 +1,332 @@
+/*=====================
+  Модульная сетка
+=====================*/
+
+$paddings: 10px;
+
+.row{
+    
+    &--inline{
+        font-size: 0;
+        
+        &>.col{
+            @extend .inline;
+            float: none;
+
+            &:first-child{
+                padding: 0 $paddings;
+            }
+
+            &:last-child{
+                padding: 0 $paddings;
+            }
+        }
+
+        &:after{
+            display: none;
+        }
+    }
+
+    .col{
+
+        &:first-child{
+            padding-left: 0px;
+        }
+
+        &:last-child{
+             padding-right: 0px;
+        }
+
+        &--single{
+            margin: 0 auto;
+            float: none;
+        }
+
+    }
+    
+    &:after{
+        @extend .clear;
+    }
+
+}
+
+.col{
+    float: left;
+    @extend .inbox;
+    padding: 0 $paddings;
+    min-height: 1px;
+}
+
+.s-1{
+    width: 8.33%;
+}
+.s-2{
+    width: 16.66%;
+}
+.s-3{
+    width: 25%;
+}
+.s-4{
+    width: 33.33%;
+}
+.s-5{
+    width: 41.66%;
+}
+.s-6{
+    width: 50%;
+}
+.s-7{
+    width: 58.33%;
+}
+.s-8{
+    width: 66.66%;
+}
+.s-9{
+    width: 75%;
+}
+.s-10{
+    width: 83.11%;
+}
+.s-11{
+    width: 91.66%;
+}
+.s-12{
+    width: 100%;
+}
+.s-20{ 
+    width: 20%;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.to-left{ 
+    float: left;
+}
+
+.to-right{
+    float: right;
+}
+
+/*=====================
+  Маленькие управляющие классы
+=====================*/
+
+.inbox{
+    box-sizing: border-box;
+}
+
+.inline{
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    zoom: 1; 
+}
+
+.clearfix:after{ 
+    content: " ";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+i, .ico{
+    @extend .inbox;
+    @extend .inline;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+.table{
+    display: table;
+}
+
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*=====================
+  Цвета
+=====================*/
+
+$black: #242424;
+
+
+/*=====================
+  Базовая типография
+=====================*/
+
+@font-face {
+    font-family: 'Gotham';
+    src:    url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+            url('fonts/GothamPro-Medium.otf')  format('opentype'),
+            url('fonts/GothamPro-Medium.woff') format('woff'), 
+            url('fonts/GothamPro-Medium.ttf')  format('truetype'), 
+            url('fonts/GothamPro-Medium.svg#fonts/GothamPro-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  font-family: 'Gotham', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1{
+  
+}
+h2{
+  
+}
+h3{
+    
+}
+h4{
+
+}
+
+p,
+li,
+span{
+  
+}
+
+strong, 
+b{
+  font-weight: 600;
+}
+
+a{
+
+  &:hover{
+
+  }
+}
+
+ul{
+    li{
+        
+    }
+}
+
+/*=====================
+  Формы
+=====================*/
+form{
+    input[type='text'], 
+    textarea, 
+    select, 
+    input[type='password']{
+        box-sizing: border-box;
+        outline: none;
+        width: 100%;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: 'Gotham', sans-serif;
+
+        &:focus{
+        
+        }
+
+    }
+
+    label{
+        cursor: pointer;
+    }
+
+    button{
+        cursor: pointer;
+        outline: none;
+    }
+
+    input::-webkit-input-placeholder{
+        
+    }
+    input::-moz-placeholde{
+        
+    }
+    
+    /* Кастомные чекбоксы и радио кнопки */
+    input[type="checkbox"],
+    input[type="radio"]{
+        display: none;
+        margin: 20px;
+    }
+
+    input[type="checkbox"] + label
+    input[type="radio"] + label{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    input[type="checkbox"] + label::before
+    input[type="radio"] + label::before{
+        content: "";
+        display: inline-block;
+        height: 49px;
+        width: 49px;
+        margin: 0 10px 0 0;
+    }
+
+    input[type="checkbox"] + label::before{
+        background: url(img/ico-checkbox.png) no-repeat;
+    }
+
+    input[type="radio"] + label::before{
+        background: url(img/ico-radio.png) no-repeat;
+    }
+
+    input[type="checkbox"]:checked + label::before {
+        background: url(img/ico-checkbox-active.png) no-repeat;
+    }
+
+    input[type="radio"]:checked + label::before {
+        background: url(img/ico-radio-active.png) no-repeat;
+    }
+
+}
+
+
+/*=====================
+  Кнопки
+=====================*/
+
+.btn{
+    @extend .inline;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 300;
+
+    &:hover{
+        
+    }
+
+    &:active{
+       
+    }
+
+    &--modify{
+
+        &:hover{
+
+        }
+        
+        &:active{
+        
+        }        
+
+    }
+ 
+}
