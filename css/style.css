@@ -465,7 +465,7 @@ form {
 /* line 43, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .main-page-top {
   background: #333;
-  padding: 40px 0 20px; }
+  padding: 40px 0 10px; }
   /* line 47, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
   .main-page-top .underline-href {
     color: #dcdcdc;
@@ -484,7 +484,7 @@ form {
 /* line 54, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .main-page-bottom {
   background: #dcdcdc;
-  padding: 20px 0 40px; }
+  padding: 10px 0 40px; }
   /* line 58, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
   .main-page-bottom .underline-href {
     color: #333;
@@ -539,11 +539,11 @@ form {
 
 /* line 102, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .icon-top {
-  top: 40px; }
+  top: 46px; }
 
 /* line 106, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .icon-bottom {
-  bottom: 40px; }
+  bottom: 46px; }
 
 /*=====================
   Медиа выражения

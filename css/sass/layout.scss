@@ -42,7 +42,7 @@
 
 .main-page-top{
 	background: $main-top-background;
-	padding: 40px 0 20px;
+	padding: 40px 0 10px;
 
 	.underline-href{
 		color: $main-top-color;
@@ -53,7 +53,7 @@
 
 .main-page-bottom{
 	background: $main-bottom-background;
-	padding: 20px 0 40px;
+	padding: 10px 0 40px;
 
 	.underline-href{
 		color: $main-bottom-color;
@@ -100,9 +100,9 @@
 }
 
 .icon-top{
-	top: 40px;
+	top: 46px;
 }
 
 .icon-bottom{
-	bottom: 40px;
+	bottom: 46px;
 }
