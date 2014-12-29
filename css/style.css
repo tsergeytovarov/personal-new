@@ -354,7 +354,7 @@ i, .ico {
 /* шрифтовые классы */
 /* line 210, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 body {
-  font-family: 'avenir', sans-serif;
+  font-family: 'avenir-regular', sans-serif;
   font-weight: 400;
   font-size: 14px; }
 
@@ -518,7 +518,7 @@ form {
 
 /* line 83, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .main-h2 {
-  font-family: 'avenir', sans-serif;
+  font-family: 'avenir-regular', sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: #fff;

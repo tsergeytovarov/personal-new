@@ -190,7 +190,7 @@ $main-bottom-background: #ccc;
 /* шрифтовые классы */
 @mixin get-font($type){
   @if $type == "regular" {
-    font-family: 'avenir', sans-serif;
+    font-family: 'avenir-regular', sans-serif;
     font-weight: 400;
   }
   @else if $type == "medium" {
