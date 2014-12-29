@@ -529,7 +529,6 @@ form {
 
 /* line 92, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .icon-href {
-  display: block;
   position: absolute;
   left: 50%;
   margin-left: -60px;
@@ -537,20 +536,20 @@ form {
   width: 120px;
   height: 150px; }
 
-/* line 102, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+/* line 101, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .icon-top {
   top: 46px; }
 
-/* line 106, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+/* line 105, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .icon-bottom {
   bottom: 46px; }
 
-/* line 116, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+/* line 115, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .path-1, .path-2, .path-3, .path-4 {
   stroke-width: 1px;
   stroke: #dcdcdc; }
 
-/* line 125, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+/* line 124, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .path-5, .path-6, .path-7, .path-8 {
   stroke-width: 1px;
   stroke: #333; }

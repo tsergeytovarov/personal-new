@@ -42,46 +42,57 @@ for (var i = 0; i < paths.length; i++) {
 	paths[i].style.strokeDashoffset = length;
 };
 
+// вывод изображений для планшетов или обработка их при наведении на ссылку
 
-// вызов функций по событиям
-// для верхней кнопки
-var top_svg = document.querySelectorAll(".js-top-svg");
-
-top_svg[0].addEventListener("mouseover", function(event) {
-
-    draw_path(".path-1", "#dcdcdc");
+if( window.innerWidth <= 1024 ){
+	draw_path(".path-1", "#dcdcdc");
 	draw_path(".path-2", "#dcdcdc");
 	draw_path(".path-3", "#dcdcdc");
 	draw_path(".path-4", "#dcdcdc");
-
-});
-
-// для нижней кнопки
-var bottom_svg = document.querySelectorAll(".js-bottom-svg");
-
-bottom_svg[0].addEventListener("mouseover", function(event) {
-
-    draw_path(".path-5", "#333");
+	draw_path(".path-5", "#333");
 	draw_path(".path-6", "#333");
 	draw_path(".path-7", "#333");
+} else {
+	// вызов функций по событиям
+	// для верхней кнопки
+	var top_svg = document.querySelectorAll(".js-top-svg");
 
-});
+	top_svg[0].addEventListener("mouseover", function(event) {
 
-/* Функции стиральщики по отводу отрабатывает под display: none */
+	    draw_path(".path-1", "#dcdcdc");
+		draw_path(".path-2", "#dcdcdc");
+		draw_path(".path-3", "#dcdcdc");
+		draw_path(".path-4", "#dcdcdc");
 
-top_svg[0].addEventListener("mouseleave", function(event) {
+	});
 
-    remove_path(".path-1");
-	remove_path(".path-2");
-	remove_path(".path-3");
-	remove_path(".path-4");
+	// для нижней кнопки
+	var bottom_svg = document.querySelectorAll(".js-bottom-svg");
 
-});
+	bottom_svg[0].addEventListener("mouseover", function(event) {
 
-bottom_svg[0].addEventListener("mouseleave", function(event) {
+	    draw_path(".path-5", "#333");
+		draw_path(".path-6", "#333");
+		draw_path(".path-7", "#333");
 
-    remove_path(".path-5");
-	remove_path(".path-6");
-	remove_path(".path-7");
+	});
 
-});
+	/* Функции стиральщики по отводу отрабатывает под display: none */
+
+	top_svg[0].addEventListener("mouseleave", function(event) {
+
+	    remove_path(".path-1");
+		remove_path(".path-2");
+		remove_path(".path-3");
+		remove_path(".path-4");
+
+	});
+
+	bottom_svg[0].addEventListener("mouseleave", function(event) {
+
+	    remove_path(".path-5");
+		remove_path(".path-6");
+		remove_path(".path-7");
+
+	});
+}
