@@ -1,323 +1,368 @@
+@charset "UTF-8";
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
-/* line 3, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+}
 
-/* line 9, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
-/* line 25, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
 
-/* line 32, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
-/* line 37, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
-/* line 43, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-[hidden], template {
-  display: none; }
+[hidden],
+template {
+  display: none;
+}
 
-/* line 47, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
-/* line 52, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-a:active, a:hover {
-  outline: 0; }
+a:active,
+a:hover {
+  outline: 0;
+}
 
-/* line 56, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
-/* line 61, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-b, strong {
-  font-weight: bold; }
+b,
+strong {
+  font-weight: bold;
+}
 
-/* line 65, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
-/* line 69, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
-/* line 73, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
-/* line 78, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
-/* line 83, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
-/* line 90, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
-/* line 94, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
-/* line 98, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 img {
-  border: 0; }
+  border: 0;
+}
 
-/* line 102, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
-/* line 109, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 hr {
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
-/* line 115, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 pre {
-  overflow: auto; }
+  overflow: auto;
+}
 
-/* line 122, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
-/* line 131, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
-  font: inherit; }
+  font: inherit;
+}
 
-/* line 136, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 button {
-  overflow: visible; }
+  overflow: visible;
+}
 
-/* line 141, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-button, select {
-  text-transform: none; }
+button,
+select {
+  text-transform: none;
+}
 
-/* line 148, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/* line 154, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-button[disabled], html input[disabled] {
-  cursor: default; }
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
 
-/* line 159, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0; }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+}
 
-/* line 163, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
-/* line 168, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
-  padding: 0; }
+  padding: 0;
+}
 
-/* line 174, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
 
-/* line 178, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
-/* line 186, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
-/* line 190, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 fieldset {
-  border: 1px solid #c0c0c0; }
+  border: 1px solid #c0c0c0;
+}
 
-/* line 194, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 legend {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
-/* line 199, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
-/* line 203, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/* line 207, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-/* line 213, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
-td, th {
-  padding: 0; }
+td,
+th {
+  padding: 0;
+}
 
-/* line 217, /Users/sergejpopov/Desktop/personal-new/css/sass/foundation.scss */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
 /*=====================
   Модульная сетка
 =====================*/
-/* line 9, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .row--inline {
-  font-size: 0; }
-  /* line 12, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  .row--inline > .col {
-    float: none; }
-    /* line 16, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-    .row--inline > .col:first-child {
-      padding: 0 10px; }
-    /* line 20, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-    .row--inline > .col:last-child {
-      padding: 0 10px; }
-  /* line 25, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  .row--inline:after {
-    display: none; }
-/* line 32, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
+  font-size: 0;
+}
+.row--inline > .col {
+  float: none;
+}
+.row--inline > .col:first-child {
+  padding: 0 10px;
+}
+.row--inline > .col:last-child {
+  padding: 0 10px;
+}
+.row--inline:after {
+  display: none;
+}
 .row .col:first-child {
-  padding-left: 0px; }
-/* line 36, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
+  padding-left: 0px;
+}
 .row .col:last-child {
-  padding-right: 0px; }
-/* line 40, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
+  padding-right: 0px;
+}
 .row .col--single {
   margin: 0 auto;
-  float: none; }
+  float: none;
+}
+.row:after {
+  content: " ";
+  clear: both;
+  display: table;
+  width: 100%;
+}
 
-/* line 53, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .col {
   float: left;
   padding: 0 10px;
-  min-height: 1px; }
+  min-height: 1px;
+}
 
-/* line 60, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-1 {
-  width: 8.33%; }
+  width: 8.33%;
+}
 
-/* line 63, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-2 {
-  width: 16.66%; }
+  width: 16.66%;
+}
 
-/* line 66, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-3 {
-  width: 25%; }
+  width: 25%;
+}
 
-/* line 69, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-4 {
-  width: 33.33%; }
+  width: 33.33%;
+}
 
-/* line 72, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-5 {
-  width: 41.66%; }
+  width: 41.66%;
+}
 
-/* line 75, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-6 {
-  width: 50%; }
+  width: 50%;
+}
 
-/* line 78, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-7 {
-  width: 58.33%; }
+  width: 58.33%;
+}
 
-/* line 81, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-8 {
-  width: 66.66%; }
+  width: 66.66%;
+}
 
-/* line 84, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-9 {
-  width: 75%; }
+  width: 75%;
+}
 
-/* line 87, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-10 {
-  width: 83.11%; }
+  width: 83.11%;
+}
 
-/* line 90, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-11 {
-  width: 91.66%; }
+  width: 91.66%;
+}
 
-/* line 93, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-12 {
-  width: 100%; }
+  width: 100%;
+}
 
-/* line 96, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .s-20 {
-  width: 20%; }
+  width: 20%;
+}
 
-/* line 100, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .text-right {
-  text-align: right; }
+  text-align: right;
+}
 
-/* line 104, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
 
-/* line 108, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .to-left {
-  float: left; }
+  float: left;
+}
 
-/* line 112, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .to-right {
-  float: right; }
+  float: right;
+}
 
 /*=====================
   Маленькие управляющие классы
 =====================*/
-/* line 120, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .inbox, .col, i, .ico {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-/* line 124, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .inline, .row--inline > .col, i, .ico, .btn {
   display: inline-block;
   *display: inline;
   vertical-align: top;
-  zoom: 1; }
+  zoom: 1;
+}
 
-/* line 131, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .clearfix:after {
   content: " ";
   clear: both;
   display: table;
-  width: 100%; }
+  width: 100%;
+}
 
-/* line 138, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 i, .ico {
   font-size: 0;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+}
 
-/* line 145, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .table {
-  display: table; }
+  display: table;
+}
 
-/* line 149, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .table-cell {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
-/* line 154, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .table-row {
-  display: table-row; }
+  display: table-row;
+}
 
 /*=====================
   Цвета
@@ -328,93 +373,99 @@ i, .ico {
 =====================*/
 /* подключаем шрифты */
 @font-face {
-  font-family: 'avenir-bold';
-  src: url('fonts/avenir-bold.eot?#iefix') format('embedded-opentype'), url('fonts/avenir-bold.otf') format('opentype'), url('fonts/avenir-bold.woff') format('woff'), url('fonts/avenir-bold.ttf') format('truetype'), url('fonts/avenir-bold.svg#avenir-bold') format('svg');
+  font-family: "avenir-bold";
+  src: url("fonts/avenir-bold.eot?#iefix") format("embedded-opentype"), url("fonts/avenir-bold.otf") format("opentype"), url("fonts/avenir-bold.woff") format("woff"), url("fonts/avenir-bold.ttf") format("truetype"), url("fonts/avenir-bold.svg#avenir-bold") format("svg");
   font-weight: bold;
-  font-style: normal; }
-
+  font-style: normal;
+}
 @font-face {
-  font-family: 'avenir-light';
-  src: url('fonts/avenir-light.eot?#iefix') format('embedded-opentype'), url('fonts/avenir-light.otf') format('opentype'), url('fonts/avenir-light.woff') format('woff'), url('fonts/avenir-light.ttf') format('truetype'), url('fonts/avenir-light.svg#avenir-light') format('svg');
+  font-family: "avenir-light";
+  src: url("fonts/avenir-light.eot?#iefix") format("embedded-opentype"), url("fonts/avenir-light.otf") format("opentype"), url("fonts/avenir-light.woff") format("woff"), url("fonts/avenir-light.ttf") format("truetype"), url("fonts/avenir-light.svg#avenir-light") format("svg");
   font-weight: bold;
-  font-style: normal; }
-
+  font-style: normal;
+}
 @font-face {
-  font-family: 'avenir-medium';
-  src: url('fonts/avenir-medium.eot?#iefix') format('embedded-opentype'), url('fonts/avenir-medium.otf') format('opentype'), url('fonts/avenir-medium.woff') format('woff'), url('fonts/avenir-medium.ttf') format('truetype'), url('fonts/avenir-medium.svg#avenir-medium') format('svg');
+  font-family: "avenir-medium";
+  src: url("fonts/avenir-medium.eot?#iefix") format("embedded-opentype"), url("fonts/avenir-medium.otf") format("opentype"), url("fonts/avenir-medium.woff") format("woff"), url("fonts/avenir-medium.ttf") format("truetype"), url("fonts/avenir-medium.svg#avenir-medium") format("svg");
   font-weight: bold;
-  font-style: normal; }
-
+  font-style: normal;
+}
 @font-face {
-  font-family: 'avenir-regular';
-  src: url('fonts/avenir-regular.eot?#iefix') format('embedded-opentype'), url('fonts/avenir-regular.otf') format('opentype'), url('fonts/avenir-regular.woff') format('woff'), url('fonts/avenir-regular.ttf') format('truetype'), url('fonts/avenir-regular.svg#avenir-regular') format('svg');
+  font-family: "avenir-regular";
+  src: url("fonts/avenir-regular.eot?#iefix") format("embedded-opentype"), url("fonts/avenir-regular.otf") format("opentype"), url("fonts/avenir-regular.woff") format("woff"), url("fonts/avenir-regular.ttf") format("truetype"), url("fonts/avenir-regular.svg#avenir-regular") format("svg");
   font-weight: bold;
-  font-style: normal; }
-
+  font-style: normal;
+}
 /* шрифтовые классы */
-/* line 210, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 body {
   font-family: 'avenir-regular', sans-serif;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
-/* line 234, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-strong, b {
-  font-weight: 600; }
+strong,
+b {
+  font-weight: 600;
+}
 
 /*=====================
   Формы
 =====================*/
-/* line 254, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 form {
-  /* Кастомные чекбоксы и радио кнопки */ }
-  /* line 258, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form input[type='text'], form textarea, form select, form input[type='password'] {
-    box-sizing: border-box;
-    outline: none;
-    width: 100%;
-    font-size: 18px;
-    line-height: 20px;
-    font-family: 'Gotham', sans-serif; }
-  /* line 272, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form label {
-    cursor: pointer; }
-  /* line 276, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form button {
-    cursor: pointer;
-    outline: none; }
-  /* line 290, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form input[type="checkbox"], form input[type="radio"] {
-    display: none;
-    margin: 20px; }
-  /* line 296, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form input[type="checkbox"] + label input[type="radio"] + label {
-    display: inline-block;
-    vertical-align: middle; }
-  /* line 302, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form input[type="checkbox"] + label::before input[type="radio"] + label::before {
-    content: "";
-    display: inline-block;
-    height: 49px;
-    width: 49px;
-    margin: 0 10px 0 0; }
-  /* line 310, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form input[type="checkbox"] + label::before {
-    background: url(img/ico-checkbox.png) no-repeat; }
-  /* line 314, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form input[type="radio"] + label::before {
-    background: url(img/ico-radio.png) no-repeat; }
-  /* line 318, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form input[type="checkbox"]:checked + label::before {
-    background: url(img/ico-checkbox-active.png) no-repeat; }
-  /* line 322, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
-  form input[type="radio"]:checked + label::before {
-    background: url(img/ico-radio-active.png) no-repeat; }
+  /* Кастомные чекбоксы и радио кнопки */
+}
+form input[type='text'],
+form textarea,
+form select,
+form input[type='password'] {
+  box-sizing: border-box;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Gotham', sans-serif;
+}
+form label {
+  cursor: pointer;
+}
+form button {
+  cursor: pointer;
+  outline: none;
+}
+form input[type="checkbox"],
+form input[type="radio"] {
+  display: none;
+  margin: 20px;
+}
+form input[type="checkbox"] + label
+input[type="radio"] + label {
+  display: inline-block;
+  vertical-align: middle;
+}
+form input[type="checkbox"] + label::before
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 49px;
+  width: 49px;
+  margin: 0 10px 0 0;
+}
+form input[type="checkbox"] + label::before {
+  background: url(img/ico-checkbox.png) no-repeat;
+}
+form input[type="radio"] + label::before {
+  background: url(img/ico-radio.png) no-repeat;
+}
+form input[type="checkbox"]:checked + label::before {
+  background: url(img/ico-checkbox-active.png) no-repeat;
+}
+form input[type="radio"]:checked + label::before {
+  background: url(img/ico-radio-active.png) no-repeat;
+}
 
 /*=====================
   Кнопки
 =====================*/
-/* line 333, /Users/sergejpopov/Desktop/personal-new/css/sass/base.scss */
 .btn {
   text-align: center;
   text-decoration: none;
@@ -422,7 +473,8 @@ form {
   font-size: 18px;
   padding: 10px 15px;
   border-radius: 5px;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 /*=====================
   Миксины
@@ -434,155 +486,174 @@ form {
 /*=====================
   Базовый каркас
 =====================*/
-/* line 9, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .container {
   width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 /*=====================
   Стили страниц, лайаты страниц и каскадные модификаторы модулей
 =====================*/
 /* main page */
-/* line 20, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .main-page-layout {
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+}
 
-/* line 26, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
-.main-page-top, .main-page-bottom {
+.main-page-top,
+.main-page-bottom {
   width: 100%;
-  height: 50vh; }
-  /* line 30, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
-  .main-page-top .underline-href, .main-page-bottom .underline-href {
-    position: relative;
-    font-size: 21px;
-    font-family: 'avenir-medium', sans-serif;
-    font-weight: 600; }
-    /* line 36, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
-    .main-page-top .underline-href:hover .icon-href, .main-page-bottom .underline-href:hover .icon-href {
-      display: block; }
+  height: 50vh;
+}
+.main-page-top .underline-href,
+.main-page-bottom .underline-href {
+  position: relative;
+  font-size: 21px;
+  font-family: 'avenir-medium', sans-serif;
+  font-weight: 600;
+}
+.main-page-top .underline-href:hover .icon-href,
+.main-page-bottom .underline-href:hover .icon-href {
+  display: block;
+}
 
-/* line 43, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .main-page-top {
   background: #333;
-  padding: 40px 0 10px; }
-  /* line 47, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+  padding: 40px 0 10px;
+}
+.main-page-top .underline-href {
+  color: #dcdcdc;
+  color: #dcdcdc;
+  background-image: linear-gradient(rgba(220, 220, 220, 0.9) 0%, #dcdcdc 100%);
+  background-size: 1px 2px;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  text-shadow: 4px 0 #333, 3px 0 #333, 2px 0 #333, 1px 0 #333, -1px 0 #333, -2px 0 #333, -3px 0 #333, -4px 0 #333;
+  text-decoration: none;
+}
+@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
   .main-page-top .underline-href {
-    color: #dcdcdc;
-    color: #dcdcdc;
-    background-image: linear-gradient(rgba(220, 220, 220, 0.9) 0%, #dcdcdc 100%);
-    background-size: 1px 2px;
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    text-shadow: 4px 0 #333, 3px 0 #333, 2px 0 #333, 1px 0 #333, -1px 0 #333, -2px 0 #333, -3px 0 #333, -4px 0 #333;
-    text-decoration: none; }
-    @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
-      .main-page-top .underline-href {
-        background-image: linear-gradient(rgba(220, 220, 220, 0.25) 0%, #dcdcdc 100%);
-        background-position: 0 93%; } }
+    background-image: linear-gradient(rgba(220, 220, 220, 0.25) 0%, #dcdcdc 100%);
+    background-position: 0 93%;
+  }
+}
 
-/* line 54, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .main-page-bottom {
   background: #dcdcdc;
-  padding: 10px 0 40px; }
-  /* line 58, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+  padding: 10px 0 40px;
+}
+.main-page-bottom .underline-href {
+  color: #333;
+  color: #333;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.9) 0%, #333 100%);
+  background-size: 1px 2px;
+  background-repeat: repeat-x;
+  background-position: 0 97%;
+  text-shadow: 4px 0 #dcdcdc, 3px 0 #dcdcdc, 2px 0 #dcdcdc, 1px 0 #dcdcdc, -1px 0 #dcdcdc, -2px 0 #dcdcdc, -3px 0 #dcdcdc, -4px 0 #dcdcdc;
+  text-decoration: none;
+}
+@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
   .main-page-bottom .underline-href {
-    color: #333;
-    color: #333;
-    background-image: linear-gradient(rgba(51, 51, 51, 0.9) 0%, #333 100%);
-    background-size: 1px 2px;
-    background-repeat: repeat-x;
-    background-position: 0 97%;
-    text-shadow: 4px 0 #dcdcdc, 3px 0 #dcdcdc, 2px 0 #dcdcdc, 1px 0 #dcdcdc, -1px 0 #dcdcdc, -2px 0 #dcdcdc, -3px 0 #dcdcdc, -4px 0 #dcdcdc;
-    text-decoration: none; }
-    @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
-      .main-page-bottom .underline-href {
-        background-image: linear-gradient(rgba(51, 51, 51, 0.25) 0%, #333 100%);
-        background-position: 0 93%; } }
+    background-image: linear-gradient(rgba(51, 51, 51, 0.25) 0%, #333 100%);
+    background-position: 0 93%;
+  }
+}
 
-/* line 66, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
-.main-cell-top, .main-cell-bottom {
-  width: 100%;
-  text-align: center; }
-
-/* line 71, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
-.main-cell-top {
-  vertical-align: top; }
-
-/* line 75, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+.main-cell-top,
 .main-cell-bottom {
-  vertical-align: bottom; }
+  width: 100%;
+  text-align: center;
+}
 
-/* line 79, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
+.main-cell-top {
+  vertical-align: top;
+}
+
+.main-cell-bottom {
+  vertical-align: bottom;
+}
+
 .main-h1 {
   font-family: 'avenir-bold', sans-serif;
   font-size: 64px;
-  color: #dcdcdc; }
+  color: #dcdcdc;
+}
 
-/* line 85, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .main-h2 {
   font-family: 'avenir-medium', sans-serif;
   font-weight: 600;
   font-size: 26px;
   color: #333;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+}
 
-/* line 92, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .icon-href {
   position: absolute;
   left: 50%;
   margin-left: -60px;
   display: none;
   width: 120px;
-  height: 150px; }
+  height: 150px;
+}
 
-/* line 101, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .icon-top {
-  top: 46px; }
+  top: 46px;
+}
 
-/* line 105, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
 .icon-bottom {
-  bottom: 46px; }
+  bottom: 46px;
+}
 
-/* line 115, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
-.path-1, .path-2, .path-3, .path-4 {
+.path-1,
+.path-2,
+.path-3,
+.path-4 {
   stroke-width: 1px;
-  stroke: #dcdcdc; }
+  stroke: #dcdcdc;
+}
 
-/* line 124, /Users/sergejpopov/Desktop/personal-new/css/sass/layout.scss */
-.path-5, .path-6, .path-7, .path-8 {
+.path-5,
+.path-6,
+.path-7,
+.path-8 {
   stroke-width: 1px;
-  stroke: #333; }
+  stroke: #333;
+}
 
 /*=====================
   Медиа выражения
 =====================*/
 @media (max-width: 1024px) {
-  /* line 7, /Users/sergejpopov/Desktop/personal-new/css/sass/media.scss */
   .icon-href {
-    display: block; }
- }
-
+    display: block;
+  }
+}
 @media (max-width: 450px) {
-  /* line 15, /Users/sergejpopov/Desktop/personal-new/css/sass/media.scss */
   .icon-href {
-    display: none; }
+    display: none;
+  }
 
-  /* line 21, /Users/sergejpopov/Desktop/personal-new/css/sass/media.scss */
+  .main-page-top .underline-href:hover .icon-href,
+  .main-page-bottom .underline-href:hover .icon-href {
+    display: none;
+  }
+
   .main-page-top .underline-href {
-    font-size: 24px; }
+    font-size: 24px;
+  }
 
-  /* line 28, /Users/sergejpopov/Desktop/personal-new/css/sass/media.scss */
   .main-page-bottom .underline-href {
-    font-size: 20px; }
+    font-size: 20px;
+  }
 
-  /* line 33, /Users/sergejpopov/Desktop/personal-new/css/sass/media.scss */
   .main-h1 {
-    font-size: 40px; }
+    font-size: 40px;
+  }
 
-  /* line 37, /Users/sergejpopov/Desktop/personal-new/css/sass/media.scss */
   .main-h2 {
     font-size: 20px;
-    word-spacing: 0px; }
- }
+    word-spacing: 0px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

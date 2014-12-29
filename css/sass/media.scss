@@ -16,6 +16,17 @@
 		display: none;
 	}
 
+	.main-page-top,
+	.main-page-bottom{
+		.underline-href{
+			&:hover{
+				.icon-href{
+					display: none;
+				}
+			}
+		}
+	}
+
 	.main-page-top{
 
 		.underline-href{

@@ -45,7 +45,10 @@ $paddings: 10px;
     }
     
     &:after{
-        @extend .clear;
+      content: " ";
+      clear: both;
+      display: table;
+      width: 100%;
     }
 
 }
@@ -118,7 +121,7 @@ $paddings: 10px;
 =====================*/
 
 .inbox{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .inline{
