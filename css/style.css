@@ -634,12 +634,13 @@ body, html {
 }
 @media (max-width: 450px) {
   .icon-href {
-    display: none;
+    width: 60px;
+    height: 80px;
+    margin-left: -30px;
   }
-
-  .main-page-top .underline-href:hover .icon-href,
-  .main-page-bottom .underline-href:hover .icon-href {
-    display: none;
+  .icon-href svg {
+    width: 60px;
+    height: 80px;
   }
 
   .main-page-top .underline-href {
