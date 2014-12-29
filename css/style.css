@@ -495,15 +495,19 @@ form input[type="radio"]:checked + label::before {
   Стили страниц, лайаты страниц и каскадные модификаторы модулей
 =====================*/
 /* main page */
+body, html {
+  height: 100%;
+}
+
 .main-page-layout {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .main-page-top,
 .main-page-bottom {
   width: 100%;
-  height: 50vh;
+  height: 50%;
 }
 .main-page-top .underline-href,
 .main-page-bottom .underline-href {
