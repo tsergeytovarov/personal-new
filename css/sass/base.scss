@@ -163,19 +163,75 @@ $black: #242424;
   Базовая типография
 =====================*/
 
+/* подключаем шрифты */
 @font-face {
-    font-family: 'Gotham';
-    src:    url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-            url('fonts/GothamPro-Medium.otf')  format('opentype'),
-            url('fonts/GothamPro-Medium.woff') format('woff'), 
-            url('fonts/GothamPro-Medium.ttf')  format('truetype'), 
-            url('fonts/GothamPro-Medium.svg#fonts/GothamPro-Medium') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'avenir-bold';
+  src:  url('fonts/avenir-bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/avenir-bold.otf')  format('opentype'),
+        url('fonts/avenir-bold.woff') format('woff'),
+        url('fonts/avenir-bold.ttf')  format('truetype'),
+        url('fonts/avenir-bold.svg#AvenirNextCyr-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'avenir-light';
+  src:  url('fonts/avenir-light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/avenir-light.otf')  format('opentype'),
+        url('fonts/avenir-light.woff') format('woff'),
+        url('fonts/avenir-light.ttf')  format('truetype'),
+        url('fonts/avenir-light.svg#AvenirNextCyr-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenir-medium';
+  src:  url('fonts/avenir-medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/avenir-medium.otf')  format('opentype'),
+        url('fonts/avenir-medium.woff') format('woff'),
+        url('fonts/avenir-medium.ttf')  format('truetype'),
+        url('fonts/avenir-medium.svg#AvenirNextCyr-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenir';
+  src:  url('fonts/avenir-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/avenir-regular.otf')  format('opentype'),
+        url('fonts/avenir-regular.woff') format('woff'),
+        url('fonts/avenir-regular.ttf')  format('truetype'),
+        url('fonts/avenir-regular.svg#AvenirNextCyr-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* шрифтовые классы */
+@mixin avenir{
+  font-family: 'avenir', sans-serif;
+  font-weight: 400;
+}
+
+@mixin avenir-bold{
+  font-family: 'avenir-bold', sans-serif;
+  font-weight: 800;
+}
+
+@mixin avenir-medium{
+  font-family: 'avenir-mefium', sans-serif;
+  font-weight: 600;
+}
+
+@mixin avenir-light{
+  font-family: 'avenir-light', sans-serif;
+  font-weight: 300;
+}
+
+
 body{
-  font-family: 'Gotham', sans-serif;
+  @include avenir;
   font-size: 14px;
   line-height: 20px;
 }
