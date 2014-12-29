@@ -643,16 +643,22 @@ body, html {
     height: 80px;
   }
 
+  .main-page-top {
+    padding: 10px 0 10px;
+  }
   .main-page-top .underline-href {
     font-size: 24px;
   }
 
+  .main-page-bottom {
+    padding: 10px 0 10px;
+  }
   .main-page-bottom .underline-href {
     font-size: 20px;
   }
 
   .main-h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .main-h2 {
