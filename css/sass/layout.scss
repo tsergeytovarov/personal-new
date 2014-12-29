@@ -26,11 +26,11 @@
 .main-page-bottom{
 	width: 100%;
 	height: 50vh;
-	padding: 20px;
 
 	.underline-href{
 		position: relative;
-		font-size: 40px;
+		font-size: 21px;
+		@include get-font("medium");
 
 		&:hover{
 			.icon-href{
@@ -42,21 +42,23 @@
 
 .main-page-top{
 	background: $main-top-background;
+	padding: 40px 0 20px;
 
 	.underline-href{
 		color: $main-top-color;
 
-		@include underline-href-colors($main-top-color, $main-top-background, 3px, 95%);
+		@include underline-href-colors($main-top-color, $main-top-background, 2px, 100%);
 	}
 }
 
 .main-page-bottom{
 	background: $main-bottom-background;
+	padding: 20px 0 40px;
 
 	.underline-href{
 		color: $main-bottom-color;
 
-		@include underline-href-colors($main-bottom-color, $main-bottom-background, 3px, 92%);
+		@include underline-href-colors($main-bottom-color, $main-bottom-background, 2px, 97%);
 	}
 }
 
@@ -76,39 +78,31 @@
 
 .main-h1{
 	@include get-font("bold");
-	font-size: 70px;
+	font-size: 64px;
 	color: $main-top-color;
 }
 
 .main-h2{
-	@include get-font("regular");
-	font-size: 24px;
+	@include get-font("medium");
+	font-size: 26px;
 	color: $main-bottom-color;
-	letter-spacing: 5px;
-	word-spacing: 10px;
+	letter-spacing: 1.5px;
 }
 
 .icon-href{
+	display: block;
 	position: absolute;
 	left: 50%;
+	margin-left: -60px;
 	display: none;
-	text-indent: -9999px;
+	width: 120px;
+	height: 150px;
 }
 
 .icon-top{
-	width: 100px;
-	height: 82px;
-	top: 120%;
-	background: url(img/document.svg);
-	background-size: 100px 82px;
-	margin-left: -50px;
+	top: 40px;
 }
 
 .icon-bottom{
-	width: 100px;
-	height: 82px;
-	bottom: 120%;
-	background: url(img/document.svg);
-	background-size: 100px 82px;
-	margin-left: -50px;
+	bottom: 40px;
 }
