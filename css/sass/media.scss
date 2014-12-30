@@ -8,6 +8,25 @@
 	.icon-href{
 		display: block;
 	}
+
+	// обо мне
+
+	.about-first-row{
+		@include s-8;
+	}
+
+	.about-second-row{
+		@include s-4;
+			
+		.col{
+			width: 100%;
+			padding: 0;
+
+			&:first-child{
+				margin-bottom: 20px;
+			}
+		}
+	}
 	
 }
 
@@ -83,6 +102,30 @@
 		h2{
 			font-size: 25px;
 			line-height: 35px;
+		}
+	}
+
+	.about-first-row{
+		@include s-12;
+		margin-bottom: 40px;
+	}
+
+	.about-second-row{
+		@include s-12;
+			
+		.col{
+			width: 100%;
+			padding: 0;
+
+			&:first-child{
+				margin-bottom: 20px;
+			}
+		}
+
+		.text-block{
+			li{
+				margin-bottom: 25px;
+			}
 		}
 	}
 	

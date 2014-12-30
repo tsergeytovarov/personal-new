@@ -674,7 +674,9 @@ i, .ico {
 /*=====================
   Цвета
 =====================*/
+/* buttons */
 /* main page*/
+/* about page */
 /*=====================
   Базовая типография
 =====================*/
@@ -791,12 +793,31 @@ form input[type="radio"]:checked + label::before {
 =====================*/
 .btn {
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
   font-size: 18px;
-  padding: 10px 15px;
+  line-height: 22px;
+  font-family: 'avenir-medium', sans-serif;
+  font-weight: 600;
+  padding: 10px 36px;
   border-radius: 5px;
-  font-weight: 300;
+  border: 1px solid #000;
+  color: #000;
+}
+.btn:hover {
+  border: 1px solid #f45615;
+  color: #f45615;
+}
+.btn:active {
+  opacity: .7;
+}
+.btn--white {
+  border: 1px solid #dcdcdc;
+  color: #dcdcdc;
+}
+.btn--white:hover {
+  border: 1px solid #f45615;
+  color: #f45615;
 }
 
 /*=====================
@@ -806,6 +827,57 @@ form input[type="radio"]:checked + label::before {
 /*=====================
   Встраиваемые модули
 =====================*/
+/* text block */
+.text-block h3,
+.text-block p,
+.text-block li,
+.text-block a {
+  font-family: 'avenir-medium', sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+.text-block h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.text-block p,
+.text-block li {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.text-block a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.text-block a:hover {
+  text-decoration: none;
+  color: #f45615;
+}
+.text-block ul {
+  list-style: none;
+  margin-left: 20px;
+}
+.text-block ul li {
+  margin-bottom: 10px;
+}
+.text-block ul a {
+  font-family: 'avenir-bold', sans-serif;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+.text-block--white h3,
+.text-block--white p,
+.text-block--white li,
+.text-block--white a {
+  color: #dcdcdc;
+}
+.text-block--white ul a {
+  color: #fff;
+}
+
 /*=====================
   Базовый каркас
 =====================*/
@@ -960,12 +1032,35 @@ body, html {
   text-align: right;
 }
 
+.about-wrapper {
+  padding: 30px 0;
+  background: #333;
+}
+.about-wrapper .btn {
+  margin: 0 0 10px 0;
+}
+
 /*=====================
   Медиа выражения
 =====================*/
 @media (max-width: 1024px) {
   .icon-href {
     display: block;
+  }
+
+  .about-first-row {
+    width: 66.66%;
+  }
+
+  .about-second-row {
+    width: 33.33%;
+  }
+  .about-second-row .col {
+    width: 100%;
+    padding: 0;
+  }
+  .about-second-row .col:first-child {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -1023,6 +1118,25 @@ body, html {
   .main-big-header h2 {
     font-size: 25px;
     line-height: 35px;
+  }
+
+  .about-first-row {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .about-second-row {
+    width: 100%;
+  }
+  .about-second-row .col {
+    width: 100%;
+    padding: 0;
+  }
+  .about-second-row .col:first-child {
+    margin-bottom: 20px;
+  }
+  .about-second-row .text-block li {
+    margin-bottom: 25px;
   }
 }
 

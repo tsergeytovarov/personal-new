@@ -145,3 +145,12 @@ body, html{
 		text-align: right;
 	}
 }
+
+.about-wrapper{
+	padding: 30px 0;
+	background: $about-background;
+
+	.btn{
+		margin: 0 0 10px 0;
+	}
+}
