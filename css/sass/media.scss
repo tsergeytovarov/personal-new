@@ -3,11 +3,34 @@
 =====================*/
 
 @media (max-width: 1024px) {
-
+	
+	// главная
 	.icon-href{
 		display: block;
 	}
 	
+}
+
+@media (max-width: 768px) {
+	
+	// обо мне
+	.main-big-header{
+		.container{
+			text-align: center;
+			background: rgba(0,0,0,.5);
+		}
+
+		h1{
+			font-size: 60px;
+			line-height: 80px;
+		}
+
+		h2{
+			font-size: 35px;
+			line-height: 50px;
+		}
+	}
+
 }
 
 @media (max-width: 450px) {
@@ -46,6 +69,21 @@
 	.main-h2{
 		font-size: 20px;
 		word-spacing: 0px;
+	}
+
+
+	// обо мне
+	.main-big-header{
+
+		h1{
+			font-size: 40px;
+			line-height: 60px;
+		}
+
+		h2{
+			font-size: 25px;
+			line-height: 35px;
+		}
 	}
 	
 }
