@@ -6,17 +6,9 @@
 function draw_path(path, colored){
 	var path = document.querySelector(path);
 	var length = path.getTotalLength();
-	// Clear any previous transition
-	path.style.transition = path.style.WebkitTransition =
-	  'none';
-
-	// Trigger a layout so styles are calculated & the browser
-	// picks up the starting position before animating
+	path.style.transition = path.style.WebkitTransition = 'none';
 	path.getBoundingClientRect();
-	// Define our transition
-	path.style.transition = path.style.WebkitTransition =
-	  'all 1s ease-in-out';
-	// Go!
+	path.style.transition = path.style.WebkitTransition = 'all 1s ease-in-out';
 	path.style.strokeDashoffset = '0';
 
 	setTimeout( function(){
@@ -29,6 +21,7 @@ function draw_path(path, colored){
 function remove_path(path){
 	var path = document.querySelector(path);
 	var length = path.getTotalLength();
+	path.style.transition = path.style.WebkitTransition = 'none';
 	path.style.strokeDashoffset = length;
 	path.style.fill = "none";
 }
