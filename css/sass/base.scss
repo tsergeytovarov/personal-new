@@ -216,9 +216,16 @@ body{
 }
 
 h1{
+  @include get-font("medium");
+  color: #fff;
+  font-size: 54px;
+  line-height: 74px;
 }
 h2{
-  
+  @include get-font("medium");
+  color: #fff;
+  font-size: 28px;
+  line-height: 38px; 
 }
 h3{
     
