@@ -641,7 +641,7 @@ pre.line-numbers > code {
   box-sizing: border-box;
 }
 
-.inline, .row--inline > .col, i, .ico, .btn {
+.inline, .row--inline > .col, i, .ico, .btn, .main-big-header a {
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -1038,6 +1038,14 @@ body, html {
 .main-big-header .container {
   height: 100%;
   text-align: right;
+}
+.main-big-header a {
+  color: #fff;
+  margin: 10px 0 0 20px;
+  font-size: 16px;
+}
+.main-big-header a:hover {
+  color: #f45615;
 }
 
 .about-wrapper {
