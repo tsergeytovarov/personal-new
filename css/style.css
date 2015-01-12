@@ -246,7 +246,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"],
 :not(pre) > code[class*="language-"] {
-  background: #141414
+  background: #141414;
   /* #141414 */
 }
 
@@ -257,25 +257,25 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection {
   /* Safari */
-  background: #27292a
+  background: #27292a;
   /* #282A2B */
 }
 
 pre[class*="language-"]::selection {
   /* Safari */
-  background: #27292a
+  background: #27292a;
   /* #282A2B */
 }
 
 pre[class*="language-"]::-moz-selection {
   /* Firefox */
-  background: #27292a
+  background: #27292a;
   /* #282A2B */
 }
 
 pre[class*="language-"]::selection {
   /* Firefox */
-  background: #27292a
+  background: #27292a;
   /* #282A2B */
 }
 
@@ -283,14 +283,14 @@ pre[class*="language-"]::selection {
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: rgba(237, 237, 237, 0.15)
+  background: rgba(237, 237, 237, 0.15);
   /* #EDEDED */
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: rgba(237, 237, 237, 0.15)
+  background: rgba(237, 237, 237, 0.15);
   /* #EDEDED */
 }
 
@@ -307,7 +307,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #787878
+  color: #787878;
   /* #777777 */
 }
 
@@ -323,7 +323,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .token.boolean,
 .token.number,
 .token.deleted {
-  color: #cf694a
+  color: #cf694a;
   /* #CF6A4C */
 }
 
@@ -333,7 +333,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .token.constant,
 .token.symbol,
 .token.builtin {
-  color: #f9ee9a
+  color: #f9ee9a;
   /* #F9EE98 */
 }
 
@@ -348,18 +348,18 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .style .token.string,
 .token.variable,
 .token.inserted {
-  color: #919e6b
+  color: #919e6b;
   /* #8F9D6A */
 }
 
 .token.atrule {
-  color: #7386a5
+  color: #7386a5;
   /* #7587A6 */
 }
 
 .token.regex,
 .token.important {
-  color: #e9c163
+  color: #e9c163;
   /* #E9C062 */
 }
 
@@ -380,7 +380,7 @@ pre[data-line] {
 .language-markup .token.tag,
 .language-markup .token.attr-name,
 .language-markup .token.punctuation {
-  color: #ad895c
+  color: #ad895c;
   /* #AC885B */
 }
 
@@ -393,6 +393,7 @@ pre[data-line] {
 .line-highlight {
   /* #545454 */
   /* #545454 */
+  background: -webkit-linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
   /* #545454 */
   background: rgba(84, 84, 84, 0.25);
   /* #545454 */
@@ -453,6 +454,7 @@ pre[data-line] {
   margin-top: 1em;
   /* Same as .prism’s padding-top */
   background: rgba(153, 122, 102, 0.08);
+  background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
   background: linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
   pointer-events: none;
   line-height: inherit;
@@ -832,12 +834,12 @@ form input[type="radio"]:checked + label::before {
 .text-block p,
 .text-block li,
 .text-block a {
-  font-family: 'avenir-medium', sans-serif;
-  font-weight: 600;
+  font-family: 'avenir-regular', sans-serif;
+  font-weight: 400;
   color: #000;
 }
 .text-block h3 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   margin-bottom: 15px;
 }
@@ -848,21 +850,22 @@ form input[type="radio"]:checked + label::before {
 }
 .text-block a {
   font-size: 14px;
-  text-decoration: underline;
+  font-family: 'avenir-bold', sans-serif;
+  color: #000;
+  text-decoration: none;
 }
 .text-block a:hover {
-  text-decoration: none;
   color: #f45615;
 }
 .text-block ul {
   list-style: none;
-  margin-left: 20px;
 }
 .text-block ul li {
   margin-bottom: 10px;
 }
 .text-block ul a {
-  font-family: 'avenir-bold', sans-serif;
+  font-family: 'avenir-medium', sans-serif;
+  font-weight: 600;
   color: #000;
   text-decoration: none;
   font-size: 16px;
@@ -894,6 +897,7 @@ form input[type="radio"]:checked + label::before {
 /* main page */
 body, html {
   height: 100%;
+  background: #333;
 }
 
 .main-page-layout {
@@ -925,6 +929,7 @@ body, html {
 .main-page-top .underline-href {
   color: #dcdcdc;
   color: #dcdcdc;
+  background-image: -webkit-linear-gradient(rgba(220, 220, 220, 0.9) 0%, #dcdcdc 100%);
   background-image: linear-gradient(rgba(220, 220, 220, 0.9) 0%, #dcdcdc 100%);
   background-size: 1px 2px;
   background-repeat: repeat-x;
@@ -934,6 +939,7 @@ body, html {
 }
 @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
   .main-page-top .underline-href {
+    background-image: -webkit-linear-gradient(rgba(220, 220, 220, 0.25) 0%, #dcdcdc 100%);
     background-image: linear-gradient(rgba(220, 220, 220, 0.25) 0%, #dcdcdc 100%);
     background-position: 0 93%;
   }
@@ -946,6 +952,7 @@ body, html {
 .main-page-bottom .underline-href {
   color: #333;
   color: #333;
+  background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.9) 0%, #333 100%);
   background-image: linear-gradient(rgba(51, 51, 51, 0.9) 0%, #333 100%);
   background-size: 1px 2px;
   background-repeat: repeat-x;
@@ -955,6 +962,7 @@ body, html {
 }
 @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
   .main-page-bottom .underline-href {
+    background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.25) 0%, #333 100%);
     background-image: linear-gradient(rgba(51, 51, 51, 0.25) 0%, #333 100%);
     background-position: 0 93%;
   }
@@ -1023,7 +1031,7 @@ body, html {
 
 /* main page */
 .main-big-header {
-  height: 100%;
+  height: 600px;
   background: url(img/background-header.jpg) no-repeat left center;
   background-size: cover;
 }
@@ -1033,11 +1041,11 @@ body, html {
 }
 
 .about-wrapper {
-  padding: 30px 0;
+  padding: 40px 0;
   background: #333;
 }
 .about-wrapper .btn {
-  margin: 0 0 10px 0;
+  margin: 0 10px 20px 0;
 }
 
 /*=====================

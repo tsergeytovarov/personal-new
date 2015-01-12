@@ -80,12 +80,12 @@
 	p,
 	li,
 	a{
-		@include get-font("medium");
+		@include get-font("regular");
 		color: $about-text-color;
 	}
 
 	h3{
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 25px;
 		margin-bottom: 15px;
 	}
@@ -98,24 +98,24 @@
 
 	a{
 		font-size: 14px;
-		text-decoration: underline;
+		@include get-font("bold");
+		color: $about-href-color;
+		text-decoration: none;	
 
 		&:hover{
-			text-decoration: none;
 			color: $about-orange;
 		}
 	}
 
 	ul{
 		list-style: none;
-		margin-left: 20px;
 
 		li{
 			margin-bottom: 10px;
 		}
 
 		a{
-			@include get-font("bold");
+			@include get-font("medium");
 			color: $about-href-color;
 			text-decoration: none;	
 			font-size: 16px;
@@ -134,7 +134,7 @@
 
 		ul{
 			a{
-				color: $about-href-color--white
+				color: $about-href-color--white;
 			}
 		}
 	}
