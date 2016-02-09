@@ -372,6 +372,15 @@ body {
     padding: 10px 30px;
     font-size: 25px;
   }
+
+  .about-picture {
+    .col-4 {
+      display: none;
+    }
+    .col-8 {
+      width: 100%;
+    }
+  }
 }
 
 .about-image {
@@ -496,15 +505,6 @@ body {
     padding-top: 80px;
     padding: 0 20px;
     box-sizing: border-box;
-  }
-
-  .about-picture {
-    .col-4 {
-      display: none;
-    }
-    .col-8 {
-      width: 100%;
-    }
   }
 
 }
