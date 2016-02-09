@@ -1,19 +1,20 @@
 html,
-body{
+body {
   height: 100%;
 }
 
-.index-container{
-  height: 100%;
+.index-container {
   display: flex;
+  height: 100%;
+
+  align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
 }
 
 .index-content {
-  text-align: center;
   animation: blow-in 2s cubic-bezier(0.04, 0.81, 0.27, 1.06);
+  text-align: center;
 }
 
 .index-title {
@@ -21,37 +22,38 @@ body{
   font-weight: 100;
 
   & + p {
+    margin: 0.5em 0 1em;
     font-size: 40px;
     font-weight: 100;
-    margin: 0.5em 0 1em;
   }
 }
 
 .social {
   display: flex;
+
   flex-wrap: nowrap;
   justify-content: center;
 }
 
 .social-btn {
   display: block;
-  font-size: 30px;
-  text-decoration: none;
   margin: 0 40px;
   padding: 10px 30px;
   border: 1px solid #000000;
-  color: #000000;
-  font-weight: 100;
   border-radius: 4px;
+  color: #000000;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .social-btn--vk {
-  border: 1px solid #2B587A;
-  color: #2B587A;
+  border: 1px solid #2b587a;
+  color: #2b587a;
 
   &:hover {
-    background-color: #2B587A;
+    background-color: #2b587a;
     color: #ffffff;
   }
 }
@@ -83,10 +85,10 @@ body{
   animation: menu-in 3s cubic-bezier(0.04, 0.81, 0.27, 1.06);
 
   &__list {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
     font-size: 0.5em;
   }
 
@@ -98,11 +100,11 @@ body{
     }
   }
 
-  a{
-    font-weight: 100;
+  a {
     color: #000000;
     text-decoration: none;
-    opacity: .8;
+    font-weight: 100;
+    opacity: 0.8;
 
     &:hover,
     &.active {
@@ -115,18 +117,19 @@ body{
       animation: academy 4s infinite;
 
       svg {
+        animation: logo 4s infinite;
+
         fill: #2f358f;
         stroke: #2f358f;
-        animation: logo 4s infinite;
       }
     }
   }
 
   svg {
-    width: 20px;
     display: inline-block;
-    vertical-align: middle;
+    width: 20px;
     margin-top: -2px;
+    vertical-align: middle;
   }
 }
 
@@ -137,14 +140,14 @@ body{
   display: flex;
   animation: lang-in 3s cubic-bezier(0.04, 0.81, 0.27, 1.06);
 
-  a{
+  a {
     display: block;
     margin-right: 20px;
-    font-size: 0.5em;
-    font-weight: 100;
     color: #000000;
     text-decoration: none;
-    opacity: .8;
+    font-size: 0.5em;
+    font-weight: 100;
+    opacity: 0.8;
 
     &:last-child {
       margin-right: 0;
@@ -158,41 +161,42 @@ body{
   }
 }
 
-.hamburger{
-  font-size: 0;
-  width: 50px;
-  height: 40px;
+.hamburger {
   position: fixed;
   top: 20px;
   left: 20px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-radius: 0;
+  z-index: 1000;
+  display: none;
+  width: 50px;
+  height: 40px;
   margin: 0;
   padding: 0;
-  z-index: 1000;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background: transparent;
   transition: all 0.3s ease;
+  font-size: 0;
 
-  span{
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     display: block;
     width: 100%;
     height: 5px;
     background-color: #000000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
   }
 
   &::before,
   &::after {
-    content: "";
+    position: absolute;
+    left: 0;
     width: 100%;
     height: 5px;
     background-color: #000000;
-    position: absolute;
-    left: 0;
+    content: "";
     transition: all 0.3s ease;
   }
 
@@ -204,14 +208,14 @@ body{
     bottom: 0;
   }
 
-  &.active{
+  &.active {
     span {
       display: none;
     }
 
     &::before {
-      transform: rotate(45deg);
       top: 17px;
+      transform: rotate(45deg);
     }
 
     &::after {
@@ -224,14 +228,15 @@ body{
 .menu-overlay {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
+  display: none;
   background: #ffffff;
+
+  align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-  display: none;
 
   &.active {
     display: flex;
@@ -239,33 +244,34 @@ body{
 }
 
 .mobile-menu {
-  a{
-    font-weight: 100;
-    color: #000000;
-    text-decoration: none;
-    opacity: 1;
+  a {
     display: block;
-    text-align: center;
-    font-size: 30px;
     margin-bottom: 40px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 100;
+    opacity: 1;
 
     span {
       color: #2f358f;
       animation: academy 4s infinite;
 
       svg {
+        animation: logo 4s infinite;
+
         fill: #2f358f;
         stroke: #2f358f;
-        animation: logo 4s infinite;
       }
     }
   }
 
   svg {
-    width: 20px;
     display: inline-block;
-    vertical-align: middle;
+    width: 20px;
     margin-top: -2px;
+    vertical-align: middle;
   }
 }
 
@@ -281,7 +287,8 @@ body{
 }
 
 @keyframes menu-in {
-  0%, 50% {
+  0%,
+  50% {
     transform: translateX(-300%);
     opacity: 0;
   }
@@ -292,7 +299,8 @@ body{
 }
 
 @keyframes lang-in {
-  0%, 50% {
+  0%,
+  50% {
     transform: translateX(300%);
     opacity: 0;
   }
@@ -303,7 +311,8 @@ body{
 }
 
 @keyframes logo {
-  0%,100% {
+  0%,
+  100% {
     fill: #2f358f;
     stroke: #2f358f;
   }
@@ -314,7 +323,8 @@ body{
 }
 
 @keyframes academy {
-  0%,100% {
+  0%,
+  100% {
     color: #2f358f;
   }
   50% {
@@ -323,42 +333,43 @@ body{
 }
 
 @media (max-width: 1024px) {
-
   .index-title {
     & + p {
+      margin: 0 0 1.5em;
       font-size: 25px;
       font-weight: 100;
-      margin: 0 0 1.5em;
     }
   }
 
   .social-btn {
-    font-size: 25px;
     margin: 0 30px;
     padding: 10px 30px;
+    font-size: 25px;
   }
-
 }
 
 @media (max-width: 640px) {
+  .hamburger {
+    display: block;
+  }
 
   .index-content {
     animation: none;
   }
 
-  .index-content{
+  .index-content {
+    box-sizing: border-box;
     width: 100%;
     padding: 0 40px;
-    box-sizing: border-box;
   }
 
   .index-title {
     font-size: 1.1em;
 
     & + p {
+      margin: 2em 0 2em;
       font-size: 0.5em;
       font-weight: 100;
-      margin: 2em 0 2em;
     }
   }
 
@@ -367,15 +378,14 @@ body{
   }
 
   .social-btn {
-    font-size: 20px;
     margin: 0 30px;
-    padding: 10px 30px;
     margin-bottom: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
   }
 
   .menu,
   .lang {
     display: none;
   }
-
 }
