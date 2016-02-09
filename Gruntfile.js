@@ -29,6 +29,12 @@ module.exports = function(grunt) {
         dest: 'build/',
         expand: true,
         cwd: 'src/'
+      },
+      htm: {
+        src: '*.html',
+        dest: 'build/en',
+        expand: true,
+        cwd: 'src/en'
       }
     },
 
