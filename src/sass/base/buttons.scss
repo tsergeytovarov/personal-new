@@ -1,0 +1,31 @@
+.btn{
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &--hover{
+
+  }
+
+  &:active,
+  &--active{
+
+  }
+
+  &--modify{
+
+    &:hover,
+    &--hover{
+
+    }
+
+    &:active,
+    &--active{
+
+    }
+  }
+}
