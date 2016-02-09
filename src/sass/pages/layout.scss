@@ -60,6 +60,18 @@ body {
   font-weight: 100;
 }
 
+.about .social {
+  display: block;
+}
+
+.about .social-btn {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px 20px 0;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
 .social-btn--vk {
   border: 1px solid #2b587a;
   color: #2b587a;
@@ -80,12 +92,72 @@ body {
   }
 }
 
+.social-btn--fb {
+  border: 1px solid #3a5795;
+  color: #3a5795;
+
+  &:hover {
+    background-color: #3a5795;
+    color: #ffffff;
+  }
+}
+
 .social-btn--mail {
   border: 1px solid #db4437;
   color: #db4437;
 
   &:hover {
     background-color: #db4437;
+    color: #ffffff;
+  }
+}
+
+.social-btn--hh {
+  border: 1px solid #d10b0f;
+  color: #d10b0f;
+
+  &:hover {
+    background-color: #d10b0f;
+    color: #ffffff;
+  }
+}
+
+.social-btn--mw {
+  border: 1px solid #65C178;
+  color: #65C178;
+
+  &:hover {
+    background-color: #65C178;
+    color: #ffffff;
+  }
+}
+
+.social-btn--br {
+  border: 1px solid #1abc9c;
+  color: #1abc9c;
+
+  &:hover {
+    background-color: #1abc9c;
+    color: #ffffff;
+  }
+}
+
+.social-btn--fr {
+  border: 1px solid #f07b6f;
+  color: #f07b6f;
+
+  &:hover {
+    background-color: #f07b6f;
+    color: #ffffff;
+  }
+}
+
+.social-btn--insta {
+  border: 1px solid #125688;
+  color: #125688;
+
+  &:hover {
+    background-color: #125688;
     color: #ffffff;
   }
 }
