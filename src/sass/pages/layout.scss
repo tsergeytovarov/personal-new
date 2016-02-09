@@ -26,6 +26,12 @@ body {
     font-size: 40px;
     font-weight: 100;
   }
+
+  span {
+    display: inline-block;
+    animation: rotate 2s linear;
+    animation-delay: 3s;
+  }
 }
 
 .social {
@@ -329,6 +335,18 @@ body {
   }
   50% {
     color: #ee5b33;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 0);
   }
 }
 
