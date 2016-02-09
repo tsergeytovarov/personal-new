@@ -172,6 +172,15 @@ body {
   }
 }
 
+.projects a{
+  color: #000000;
+  text-decoration: none;
+
+  &:hover{
+    border-bottom: 1px solid #000000;
+  }
+}
+
 .menu {
   position: fixed;
   z-index: 500;
