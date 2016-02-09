@@ -162,6 +162,16 @@ body {
   }
 }
 
+.social-btn--yt {
+  border: 1px solid #cc181e;
+  color: #cc181e;
+
+  &:hover {
+    background-color: #cc181e;
+    color: #ffffff;
+  }
+}
+
 .menu {
   position: fixed;
   z-index: 500;
