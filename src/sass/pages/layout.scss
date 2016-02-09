@@ -66,10 +66,10 @@ body {
 
 .about .social-btn {
   display: inline-block;
-  vertical-align: top;
   margin: 0 20px 20px 0;
-  font-size: 24px;
   padding: 10px 20px;
+  vertical-align: top;
+  font-size: 24px;
 }
 
 .social-btn--vk {
@@ -123,11 +123,11 @@ body {
 }
 
 .social-btn--mw {
-  border: 1px solid #65C178;
-  color: #65C178;
+  border: 1px solid #65c178;
+  color: #65c178;
 
   &:hover {
-    background-color: #65C178;
+    background-color: #65c178;
     color: #ffffff;
   }
 }
@@ -172,11 +172,11 @@ body {
   }
 }
 
-.projects a{
+.projects a {
   color: #000000;
   text-decoration: none;
 
-  &:hover{
+  &:hover {
     border-bottom: 1px solid #000000;
   }
 }
