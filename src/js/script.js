@@ -13,4 +13,10 @@
       modalMenu.classList.add('active');
     }
   });
+
+  // активный пункт меню
+  var path = window.location.pathname;
+  path = path.substring(1, path.length);
+  var activeLink = document.querySelector('a[href=\"' + path +'\"]');
+  activeLink.classList.add('active');
 })();

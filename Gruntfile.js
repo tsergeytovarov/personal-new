@@ -161,7 +161,7 @@ module.exports = function(grunt) {
       },
       images: {
         files: ['src/img/**/*.{png,jpg,gif,svg}'],
-        tasks: ['img'],
+        tasks: ['copy:img, img'],
         options: {
           spawn: false,
           livereload: true
