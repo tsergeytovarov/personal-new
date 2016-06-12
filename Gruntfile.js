@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     },
 
     includereplace: {
-      htm: {
+      htmm: {
         src: '*.html',
         dest: 'build/',
         expand: true,
