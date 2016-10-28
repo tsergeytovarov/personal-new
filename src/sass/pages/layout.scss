@@ -186,7 +186,6 @@ body {
   z-index: 500;
   padding: 20px;
   background-color: #ffffff;
-  animation: menu-in 3s cubic-bezier(0.04, 0.81, 0.27, 1.06);
 
   &__list {
     display: flex;
@@ -221,8 +220,6 @@ body {
       animation: academy 4s infinite;
 
       svg {
-        animation: logo 4s infinite;
-
         fill: #2f358f;
         stroke: #2f358f;
       }
@@ -242,7 +239,6 @@ body {
   right: 20px;
   display: flex;
   padding: 20px 0;
-  animation: lang-in 3s cubic-bezier(0.04, 0.81, 0.27, 1.06);
 
   a {
     display: block;
@@ -383,30 +379,6 @@ body {
 @keyframes blow-in {
   0% {
     transform: translateY(-5000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes menu-in {
-  0%,
-  50% {
-    transform: translateX(-300%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes lang-in {
-  0%,
-  50% {
-    transform: translateX(300%);
     opacity: 0;
   }
   100% {
@@ -604,7 +576,6 @@ body {
   }
 
   .projects a {
-
   }
 
   .index-content {
