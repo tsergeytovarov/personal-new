@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "Rubik", sans-serif;
+  color: #444444;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 50%;
+
+  border: 2px solid #e5e5e5;
+}
+
+.card__header {
+  padding: 20px;
+
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.card__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.card__title small {
+  font-weight: 400;
+  font-size: 0.7em;
+  font-style: italic;
+
+  opacity: 0.7;
+}
+
+.card__content {
+  display: flex;
+  align-items: top;
+  padding: 20px;
+
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.card__image {
+  width: 200px;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.card__image img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.card__items {
+  flex: 1;
+}
+
+.card__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.card__list li {
+  margin-bottom: 10px;
+}
+
+.card__list li::before {
+  content: " – ";
+}
+
+.card a {
+  color: #4286f4;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card__footer {
+  padding: 20px;
+}
+
+.card .academy {
+  color: #37238b;
+}
+
+.card .moscoding {
+  color: blue;
+}
+
+.card .cssmoscow {
+  color: #ff001d;
+}
+
+.card .youtube {
+  color: #cc181e;
+}
+
+.card .hh {
+  color: #d10b0f;
+}
+
+.card .facebook {
+  color: #3b5998;
+}
+
+.card .twitter {
+  color: #1da1f2;
+}
+
+.card .instagram {
+  color: #000000;
+}
+
+.card .github {
+  color: #24292e;
+}
+
+@media (max-width: 940px) {
+  .card {
+    width: 95%;
+  }
+
+  .card__image {
+    display: none;
+  }
+
+  .page {
+    display: flex;
+    align-items: top;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  body {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
