@@ -202,6 +202,7 @@ p span {
 .page--speaker {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  height: auto;
 }
 
 @media (max-width: 940px) {
