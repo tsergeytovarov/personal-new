@@ -1,17 +1,17 @@
 {
   "name": "Personal site",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "license": "MIT",
   "description": "",
   "dependencies": {
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tsergeytovarov/grunt-project.git"
+    "url": "https://github.com/tsergeytovarov/personal-new.git"
   },
   "author": "Sergey Popov <tovarov.piter@gmail.com>",
   "bugs": {
-    "url": "https://github.com/tsergeytovarov/grunt-project/issues"
+    "url": "https://github.com/tsergeytovarov/personal-new/issues"
   },
   "homepage": "http://sergeypopov.site",
   "devDependencies": {

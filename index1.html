@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="utf-8">
+
+  <title>Попов Сергей — фронтенд разработчик</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="index, follow">
+  <meta name="title" content="Попов Сергей - фронтенд разработчик">
+  <meta name="description" content="Персональный сайт html разработчика из Москвы Сергея Попова.">
+  <meta name="keywords" content="html, css, js, вёрстка, спб, санкт-петербург, москва, фриланс, psd, обучение, наставник, ментор, html academy, верстальщик, Moscow Coding School, moscowcss">
+  <meta name="author" content="Сергей Попов">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <div>
+    <ol class="js-last-fm">
+
+    </ol>
+    <div class="link">
+      <a href="https://www.last.fm/user/sergeytovarov/library/tracks?date_preset=LAST_30_DAYS" class="link-more">Смотреть все</a>
+    </div>
+  <div>
+
+
+  <script type="text/javascript">
+  var XHRLastFm = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+
+  var XHRLastFm = new XHRLastFm();
+
+  XHRLastFm.open('GET', 'http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=sergeytovarov&api_key=9dac3ab37b627ef81e9f9c97cd2f6da5&format=json&period=1month&limit=10', true);
+
+  XHRLastFm.onload = function() {
+    var response =  JSON.parse(this.responseText);
+
+    var responseTracks = response.toptracks.track;
+
+    var wrapper = document.querySelector('.js-last-fm');
+
+    responseTracks.forEach( function(track, i) {
+
+      var listItem = document.createElement('li');
+
+      var link = document.createElement('a');
+      link.href = track.url;
+      link.target = '_blank';
+
+      link.innerText = '(' + track.playcount + ') ' +track.artist.name + ' — ' + track.name;
+
+      listItem.appendChild(link);
+      wrapper.appendChild(listItem);
+    });
+  }
+
+  XHRLastFm.onerror = function() {
+    console.log( 'С LastFM API что-то пошло не так: ' + this.status );
+  }
+
+  XHRLastFm.send();
+
+
+  var XHRInstagram = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+
+  var XHRInstagram = new XHRInstagram();
+
+  XHRInstagram.open(
+    'GET',
+    'https://api.instagram.com/v1/users/6213610920/media/recent?access_token=6213610920.d1b5498.234818a1381c48429742a8e758d149a6&cont=4',
+    true
+  );
+
+  XHRInstagram.onload = function() {
+    console.log(this.responseText);
+  }
+
+  XHRInstagram.onerror = function() {
+    console.log( 'С instagram API что-то пошло не так: ' + this.status );
+  }
+
+  XHRInstagram.send();
+
+
+  // var token = '6213610920.d1b5498.234818a1381c48429742a8e758d149a6';
+  // var username = 'sergeytovarov78';
+  // var num_photos = 4;
+
+// $.ajax({ // the first ajax request returns the ID of user rudrastyh
+// 	url: 'https://api.instagram.com/v1/users/search',
+// 	dataType: 'jsonp',
+// 	type: 'GET',
+// 	data: {access_token: token, q: username}, // actually it is just the search by username
+// 	success: function(data){
+// 		console.log(data);
+// 		$.ajax({
+// 			url: 'https://api.instagram.com/v1/users/' + data.data[0].id + '/media/recent', // specify the ID of the first found user
+// 			dataType: 'jsonp',
+// 			type: 'GET',
+// 			data: {access_token: token, count: num_photos},
+// 			success: function(data2){
+// 				console.log(data2);
+// 				for(x in data2.data){
+// 					$('ul').append('<li><img src="'+data2.data[x].images.thumbnail.url+'"></li>');
+// 				}
+//     			},
+// 			error: function(data2){
+// 				console.log(data2);
+// 			}
+// 		});
+// 	},
+// 	error: function(data){
+// 		console.log(data);
+// 	}
+// });
+  </script>
+
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42922384 = new Ya.Metrika({ id:42922384, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42922384" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+</html>
