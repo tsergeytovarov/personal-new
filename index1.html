@@ -27,59 +27,11 @@
     </div>
   <div>
 
-    <div class="instagram">
-      <div class="js-instagram"></div>
-    </div>
+  <div class="instagram">
+    <div class="js-instagram"></div>
+  </div>
 
-
-  <script type="text/javascript">
-  var XHRLastFm = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
-
-  var XHRLastFm = new XHRLastFm();
-
-  XHRLastFm.open('GET', 'http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=sergeytovarov&api_key=9dac3ab37b627ef81e9f9c97cd2f6da5&format=json&period=1month&limit=10', true);
-
-  XHRLastFm.onload = function() {
-    var response =  JSON.parse(this.responseText);
-
-    var responseTracks = response.toptracks.track;
-
-    var wrapper = document.querySelector('.js-last-fm');
-
-    responseTracks.forEach( function(track, i) {
-
-      var listItem = document.createElement('li');
-
-      var link = document.createElement('a');
-      link.href = track.url;
-      link.target = '_blank';
-
-      link.innerText = '(' + track.playcount + ') ' +track.artist.name + ' — ' + track.name;
-
-      listItem.appendChild(link);
-      wrapper.appendChild(listItem);
-    });
-  }
-
-  XHRLastFm.onerror = function() {
-    console.log( 'С LastFM API что-то пошло не так: ' + this.status );
-  }
-
-  XHRLastFm.send();
-
-  var instagramPhotos = ['BaQtnkjHUCl', 'BaPOo_on_RD', 'BaOP9BaH3_y', 'BaL7e9pHHBT'];
-  var photoWrapper = document.querySelector('.js-instagram');
-
-  instagramPhotos.forEach(function(photo){
-    var linkToPhoto = 'https://instagram.com/p/' + photo + '/media/?size=l';
-
-    var image = document.createElement('img');
-    image.alt = 'Фото из инстаграма';
-    image.src = linkToPhoto;
-
-    photoWrapper.appendChild(image);
-  });
-  </script>
+  <script src="script.js"></script>
 
   <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42922384 = new Ya.Metrika({ id:42922384, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42922384" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
