@@ -1,3 +1,141 @@
 :root {
-  --varible: 1px;
+  --box-size: 50px;
+  --box-color: #eeeeee;
+
+  --wrapper-padding: 70px;
+  --wrapper-color: #ffffff;
+
+  --font: 'Ubuntu', 'Arial', sans-serif;
+}
+
+body {
+  padding: var(--box-size);
+  background-color: var(--box-color);
+
+  font-family: var(--font);
+}
+
+.wrapper {
+  padding: var(--wrapper-padding);
+  background-color: var(--wrapper-color);
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 36px;
+  grid-row-gap: 70px;
+}
+
+.about {
+  grid-column: span 9;
+}
+
+.about__name {
+  font-size: 66px;
+  line-height: 70px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.about__lead {
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
+  font-weight: 300;
+}
+
+.about__text {
+  font-size: 26px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+
+  position: relative;
+}
+
+.about__text::before {
+  content: '';
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 30px;
+  height: 6px;
+  background-color: #898989;
+}
+
+.social {
+  grid-column: span 3;
+
+  padding: 40px;
+  background-color: #f2fff0;
+}
+
+.social__title {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: ;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.social__list:last-child {
+  margin-bottom: 0
+}
+
+.social__item {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.social__link {
+  color: #2ed549;
+}
+
+.social__link:hover {
+  text-decoration: none;
+}
+
+.social__link--bold {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.block {
+  grid-column: span 4;
+}
+
+.block__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  position: relative;
+}
+
+.block__title::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 30px;
+  height: 6px;
+  background-color: #898989;
 }
