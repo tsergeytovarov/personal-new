@@ -139,3 +139,108 @@ body {
   height: 6px;
   background-color: #898989;
 }
+
+.instagram {
+  margin-top: 20px;
+}
+
+.instagram__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  grid-gap: 20px;
+}
+
+.instagram__item {
+  overflow: hidden;
+}
+
+.instagram__item img {
+  width: 100%;
+  display: block;
+  transform: scale(1.2);
+}
+
+.music {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.music-loader {
+  height: 200px;
+  background-color: rgba(0, 255, 0, 0.5);
+  animation-name: music-loader;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes music-loader {
+  0% {
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+}
+
+.music-fail {
+  height: 200px;
+  background-color: rgba(255, 0, 0, 0.5);
+  position: relative;
+}
+
+.music-fail::after {
+  content: attr(data-error-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.music li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.music a {
+  color: #000000;
+}
+
+.music a:hover {
+  text-decoration: none;
+}
+
+.link a {
+  color: #2ed549;
+  font-size: 15px;
+}
+
+.link a:hover {
+  text-decoration: none;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.list a {
+  color: #2ed549;
+}
