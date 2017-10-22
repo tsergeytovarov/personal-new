@@ -41,24 +41,3 @@ XHRLastFm.onerror = function() {
 }
 
 XHRLastFm.send();
-
-
-
-/*
- * Instagram pgotos by id
- */
-
-var instagramPhotos = ['BaQtnkjHUCl', 'BaPOo_on_RD', 'BaOP9BaH3_y', 'BaLuOuzHwgk'];
-var photoWrapper = document.querySelector('.js-instagram');
-
-instagramPhotos.forEach(function(photo, i){
-  var linkToPhoto = 'https://instagram.com/p/' + photo + '/media/?size=l';
-
-  var wrapper = document.createElement('div');
-  wrapper.classList.add('instagram__item');
-  var image = document.createElement('img');
-  image.alt = 'Фото ' + (i + 1);
-  image.src = linkToPhoto;
-  wrapper.appendChild(image);
-  photoWrapper.appendChild(wrapper);
-});

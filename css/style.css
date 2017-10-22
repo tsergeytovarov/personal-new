@@ -140,27 +140,6 @@ body {
   background-color: #898989;
 }
 
-.instagram {
-  margin-top: 20px;
-}
-
-.instagram__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  grid-gap: 20px;
-}
-
-.instagram__item {
-  overflow: hidden;
-}
-
-.instagram__item img {
-  width: 100%;
-  display: block;
-  transform: scale(1.2);
-}
-
 .music {
   margin: 0;
   padding: 0;
