@@ -10,7 +10,7 @@ containerMusicLoader.classList.add('music-loader');
 
 XHRLastFm.open(
   'GET',
-  'http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=sergeytovarov&api_key=9dac3ab37b627ef81e9f9c97cd2f6da5&format=json&period=1month&limit=10',
+  'http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=sergeytovarov&api_key=9dac3ab37b627ef81e9f9c97cd2f6da5&format=json&period=1month&limit=7',
   true
 );
 
