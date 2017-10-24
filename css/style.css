@@ -39,17 +39,17 @@ body {
 }
 
 .about__lead {
-  font-size: 36px;
-  line-height: 40px;
+  line-height: 36px;
   margin: 0;
   padding: 0;
   margin-bottom: 70px;
+  font-size: 30px;
   font-weight: 300;
 }
 
 .about__text {
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 28px;
   margin: 0;
   padding: 0;
   font-weight: 300;
@@ -89,9 +89,16 @@ body {
   list-style: none;
   margin-bottom: ;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -161,10 +168,26 @@ body {
 .music-loader {
   height: 200px;
   background-color: rgba(0, 255, 0, 0.5);
-  animation-name: music-loader;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: music-loader;
+          animation-name: music-loader;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes music-loader {
+  0% {
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    background-color: rgba(0, 255, 0, 0.5);
+  }
 }
 
 @keyframes music-loader {
@@ -190,7 +213,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 20px;
   color: #ffffff;
 }
@@ -251,4 +276,157 @@ body {
 
 .sub-block a:hover {
   text-decoration: none;
+}
+
+
+@media (min-width: 1500px) {
+  .about__name {
+    font-size: 90px;
+    line-height: 100px;
+  }
+
+  .about__lead {
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  .about__text {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .social__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .social__item {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .block__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .list li {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .sub-block h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .sub-block p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .music li {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .wrapper {
+    padding: 40px;
+  }
+
+  .about {
+    grid-column: span 8;
+  }
+
+  .social {
+    grid-column: span 4;
+    padding: 20px;
+  }
+
+  .social__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .block__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .list li {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .block {
+    grid-column: span 6;
+  }
+
+  .sub-block h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .sub-block p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .music li {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .link a {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .wrapper {
+    padding: 20px;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .wrapper {
+    padding: 10px;
+
+    display: block;
+  }
+
+  .social {
+    margin: 30px 0;
+  }
+
+  .block {
+    margin-top: 60px;
+  }
+
+  .block__title {
+    font-size: 30px;
+  }
+
+  .block__title::before {
+    display: none;
+  }
 }
