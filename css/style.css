@@ -1,23 +1,13 @@
-:root {
-  --box-size: 50px;
-  --box-color: #eeeeee;
-
-  --wrapper-padding: 70px;
-  --wrapper-color: #ffffff;
-
-  --font: 'Ubuntu', 'Arial', sans-serif;
-}
-
 body {
-  padding: var(--box-size);
-  background-color: var(--box-color);
+  padding: 50px;
+  background-color: #eeeeee;
 
-  font-family: var(--font);
+  font-family: 'Ubuntu', 'Arial', sans-serif;
 }
 
 .wrapper {
-  padding: var(--wrapper-padding);
-  background-color: var(--wrapper-color);
+  padding: 70px;
+  background-color: #ffffff;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
