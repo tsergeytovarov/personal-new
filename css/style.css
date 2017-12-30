@@ -297,6 +297,39 @@ body {
   display: block;
 }
 
+.promo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.promo--close {
+  display: none;
+}
+
+.promo a {
+  color: #ffffff;
+}
+
+.promo button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: 13px;
+  line-height: 13px;
+  color: #ffffff;
+}
+
 @media (min-width: 1500px) {
   .about__name {
     font-size: 90px;

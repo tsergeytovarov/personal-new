@@ -41,3 +41,18 @@ XHRLastFm.onerror = function() {
 }
 
 XHRLastFm.send();
+
+var closePopup = document.querySelector('.js-close-promo');
+
+if (closePopup) {
+
+  closePopup.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    var promo = document.querySelector('.promo');
+
+    if (promo) {
+      promo.classList.add('promo--close');
+    }
+  })
+}
