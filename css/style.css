@@ -1,8 +1,22 @@
+:root {
+  --body-color: #eeeeee;
+  --base-bg-color: #f2fff0;
+  --base-color: #2ed549;
+}
+
 body {
   padding: 50px;
-  background-color: #eeeeee;
+  background-color: var(--body-color);
 
   font-family: 'Ubuntu', 'Arial', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .wrapper {
@@ -61,7 +75,7 @@ body {
   grid-column: span 3;
 
   padding: 40px;
-  background-color: #f2fff0;
+  background-color: var(--base-bg-color);
 }
 
 .social__title {
@@ -102,7 +116,7 @@ body {
 }
 
 .social__link {
-  color: #2ed549;
+  color: var(--base-color);
 }
 
 .social__link:hover {
@@ -225,7 +239,7 @@ body {
 }
 
 .link a {
-  color: #2ed549;
+  color: var(--base-color);
   font-size: 15px;
 }
 
@@ -246,7 +260,7 @@ body {
 }
 
 .list a {
-  color: #2ed549;
+  color: var(--base-color);
 }
 
 .sub-block h3 {
@@ -261,7 +275,7 @@ body {
 }
 
 .sub-block a {
-  color: #2ed549;
+  color: var(--base-color);
 }
 
 .sub-block a:hover {
@@ -299,6 +313,7 @@ body {
 
 .promo {
   position: fixed;
+  z-index: 200;
   top: 0;
   left: 0;
   width: 320px;
