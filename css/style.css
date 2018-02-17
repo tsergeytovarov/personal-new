@@ -130,6 +130,10 @@ body {
 
 .block {
   grid-column: span 4;
+
+  max-height: 500px;
+  overflow-y: scroll;
+  /* overscroll-behavior: contain; */
 }
 
 .block__title {
@@ -138,7 +142,11 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  padding-bottom: 10px;
 }
 
 .block__title::before {
@@ -257,6 +265,12 @@ body {
 .list li {
   margin-bottom: 10px;
   font-size: 15px;
+  line-height: 20px;
+}
+
+.list-hr {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .list a {
@@ -419,6 +433,11 @@ body {
   .social__item {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .block {
+    max-height: none;
+    overflow-y: auto;
   }
 
   .block__title {
