@@ -56,3 +56,64 @@ if (closePopup) {
     }
   })
 }
+
+var XHRInsta = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+var XHRInsta = new XHRInsta();
+
+var containerInstaLoader = document.querySelector('.js-instagram');
+containerInstaLoader.classList.add('music-loader');
+
+XHRInsta.open(
+  'GET',
+  'https://api.instagram.com/v1/users/self/media/recent/?access_token=6213610920.d54010f.b8e1f2486d8e42baa8a8fc0f9e51a20a&count=5',
+  true
+);
+
+XHRInsta.onload = function() {
+  var response =  JSON.parse(this.responseText);
+
+  // console.log(response);
+
+  var photos = response.data;
+  var wrapper = document.querySelector('.js-instagram');
+
+  photos.forEach( function(photo, i) {
+    // var listItem = document.createElement('li');
+
+    var photoImage = photo.images.standard_resolution.url;
+    var photoLikes = photo.likes.count;
+    var photoAlt = 'Картинка из инстаграма';
+
+    if (photo.caption !== null) {
+      var photoAlt = photo.caption.text;
+    }
+
+
+    var div = document.createElement('div');
+    div.classList.add('photos__item');
+
+    var img = document.createElement('img');
+    img.src = photoImage;
+    img.width = 400;
+    img.alt = photoAlt;
+
+    var likes = document.createElement('div');
+    likes.classList.add('photos__likes');
+    likes.innerText = photoLikes;
+
+    div.appendChild(img);
+    div.appendChild(likes);
+
+    wrapper.appendChild(div);
+  });
+
+  containerInstaLoader.classList.remove('music-loader');
+}
+
+XHRInsta.onerror = function() {
+  console.log( 'С LastFM API что-то пошло не так: ' + this.status );
+  containerInstaLoader.classList.remove('music-loader');
+  containerInstaLoader.classList.add('music-fail');
+}
+
+XHRInsta.send();
