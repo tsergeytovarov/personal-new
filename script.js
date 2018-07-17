@@ -117,3 +117,65 @@ XHRInsta.onerror = function() {
 }
 
 XHRInsta.send();
+
+var xrh = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+var xrh = new xrh();
+
+xrh.open(
+  'GET',
+  'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=sergeytovarov&api_key=9dac3ab37b627ef81e9f9c97cd2f6da5&format=json',
+  true
+);
+
+xrh.onload = function() {
+  var response =  JSON.parse(this.responseText);
+
+  var track = response.recenttracks.track[0];
+
+  // console.log(track);
+
+  // var live = track['@attr'].nowplaying;
+
+  if (track['@attr']) {
+    console.log(track.url);
+
+    var artist = track.artist["#text"];
+    var name = track.name;
+    var name = artist + " — " + name;
+    var image = track.image["3"]["#text"];
+
+    var div = document.createElement('div');
+    div.classList.add('scrobbler');
+
+    var img = document.createElement('img');
+    img.src = image;
+    img.width = 400;
+    img.alt = name;
+
+    var title = document.createElement('p');
+    title.classList.add('scrobbler__title');
+    title.innerText = name;
+
+    var link = document.createElement('a');
+    link.classList.add('scrobbler__link');
+    link.href = track.url;
+    link.target = "_blank";
+    link.innerText = name;
+
+    div.appendChild(title);
+    div.appendChild(img);
+    div.appendChild(link);
+
+    var wrapper = document.querySelector('.js-scrobbler');
+    wrapper.appendChild(div);
+  } else {
+    var wrapper = document.querySelector('.js-scrobbler');
+    wrapper.innerText = 'Сейчас ничего не играет';
+  }
+}
+
+xrh.onerror = function() {
+  console.log( 'неа' );
+}
+
+xrh.send();

@@ -397,6 +397,27 @@ body {
   text-align: center;
 }
 
+.scrobbler {
+
+}
+
+.scrobbler__title {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.scrobbler img {
+  width: 100%;
+  display: block;
+}
+
+.scrobbler__link {
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+
 @media (min-width: 1500px) {
   .about__name {
     font-size: 90px;
