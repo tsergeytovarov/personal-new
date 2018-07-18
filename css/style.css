@@ -325,40 +325,6 @@ body {
   display: block;
 }
 
-.promo {
-  position: fixed;
-  z-index: 200;
-  top: 0;
-  right: 0;
-  width: 320px;
-  box-sizing: border-box;
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-size: 18px;
-  line-height: 25px;
-  color: #ffffff;
-}
-
-.promo--close {
-  display: none;
-}
-
-.promo a {
-  color: #ffffff;
-}
-
-.promo button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-  font-size: 13px;
-  line-height: 13px;
-  color: #ffffff;
-}
-
 .block--photos {
   grid-column: span 12;
   max-height: auto;
@@ -397,26 +363,39 @@ body {
   text-align: center;
 }
 
-.scrobbler {
+.live {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 280px;
+  z-index: 200;
+  background-color: #ffffff;
+  padding: 20px;
+  display: none;
 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+  transition: opacity 0.2s ease;
+  will-change: opacity;
+}
+
+.live--active {
+  display: block;
+}
+
+.live--active:hover {
+  opacity: 0.1;
 }
 
 .scrobbler__title {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .scrobbler img {
   width: 100%;
   display: block;
 }
-
-.scrobbler__link {
-  font-size: 16px;
-  display: block;
-  margin-top: 10px;
-}
-
 
 @media (min-width: 1500px) {
   .about__name {
@@ -553,6 +532,20 @@ body {
 
   .photos {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .live {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    box-shadow: none;
+  }
+
+  .live:hover {
+    opacity: 1;
   }
 }
 

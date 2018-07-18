@@ -42,21 +42,6 @@ XHRLastFm.onerror = function() {
 
 XHRLastFm.send();
 
-var closePopup = document.querySelector('.js-close-promo');
-
-if (closePopup) {
-
-  closePopup.addEventListener('click', function(event) {
-    event.preventDefault();
-
-    var promo = document.querySelector('.promo');
-
-    if (promo) {
-      promo.classList.add('promo--close');
-    }
-  })
-}
-
 var XHRInsta = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 var XHRInsta = new XHRInsta();
 
@@ -78,7 +63,6 @@ XHRInsta.onload = function() {
   var wrapper = document.querySelector('.js-instagram');
 
   photos.forEach( function(photo, i) {
-    // var listItem = document.createElement('li');
 
     var photoImage = photo.images.standard_resolution.url;
     var photoLikes = photo.likes.count;
@@ -132,45 +116,32 @@ xrh.onload = function() {
 
   var track = response.recenttracks.track[0];
 
-  // console.log(track);
-
-  // var live = track['@attr'].nowplaying;
-
   if (track['@attr']) {
-    console.log(track.url);
 
-    var artist = track.artist["#text"];
-    var name = track.name;
-    var name = artist + " — " + name;
+    var name = track.artist["#text"] + " — " + track.name;
     var image = track.image["3"]["#text"];
 
     var div = document.createElement('div');
     div.classList.add('scrobbler');
 
-    var img = document.createElement('img');
-    img.src = image;
-    img.width = 400;
-    img.alt = name;
-
     var title = document.createElement('p');
     title.classList.add('scrobbler__title');
     title.innerText = name;
-
-    var link = document.createElement('a');
-    link.classList.add('scrobbler__link');
-    link.href = track.url;
-    link.target = "_blank";
-    link.innerText = name;
-
     div.appendChild(title);
-    div.appendChild(img);
-    div.appendChild(link);
+
+    if (image !== '') {
+      var img = document.createElement('img');
+      img.src = image;
+      img.width = 400;
+      img.alt = name;
+      div.appendChild(img);
+    }
 
     var wrapper = document.querySelector('.js-scrobbler');
     wrapper.appendChild(div);
-  } else {
-    var wrapper = document.querySelector('.js-scrobbler');
-    wrapper.innerText = 'Сейчас ничего не играет';
+
+    var live = document.querySelector('.live');
+    live.classList.add('live--active');
   }
 }
 
