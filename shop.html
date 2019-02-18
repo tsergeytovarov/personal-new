@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="utf-8">
+
+  <title>Попов Сергей — магазинчик</title>
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta property="og:title" content="Попов Сергей — фронтенд-разработчик">
+  <meta property="og:description" content="Руководитель аутсорса по фронтенд-разработке Лига А. от HTML Academy. Разработчик с восьмилетнем стажем, ментор, наставник, преподаватель авторских программ. Организатор сообщества moscowcss, pitercss_conf, pitercss_meetup и WSD. Пишу статьи, авторские доклады и с ними же выступаю на митапах и конференциях. Всё, что я могу рассказать о себе, можно найти на этой странице.">
+  <meta property="og:url" content="http://sergeypopov.site">
+  <meta property="og:image" content="https://pp.userapi.com/c840328/v840328055/493d/cIdiI--eriU.jpg">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <style>
+    body {
+      padding: 70px;
+
+      font-family: 'Ubuntu', 'Arial', sans-serif;
+    }
+
+    .shop {
+
+    }
+
+    .shop h1{
+      font-size: 100px;
+      line-height: 110px;
+      margin: 0;
+
+      margin-bottom: 70px;
+    }
+
+    .item {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      grid-gap: 20px;
+
+      margin-bottom: 70px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item__title {
+      grid-column: 1 / 3;
+      grid-row: 1;
+
+      margin: 0;
+    }
+
+    .item__description {
+      grid-column: 1 / 4;
+    }
+
+    .item__description p {
+      margin: 0;
+      margin-bottom: 15px;
+
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .item__description p:last-child {
+      margin-bottom: 0;
+    }
+
+    .item__description a {
+      color: blue;
+    }
+
+    .item__price {
+      grid-column: 1 / 2;
+
+      margin: 0;
+    }
+
+    .item__button {
+      grid-column: 2 / 3;
+    }
+
+    .item__image {
+      display: block;
+      width: 100%;
+    }
+
+    .item__image--first {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .item__image--second {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .item__image--third {
+      grid-column: 3;
+      grid-row: 3;
+    }
+
+    .item__image--fourth {
+      grid-column: 4;
+      grid-row: 3;
+    }
+
+    .item__price {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 48px;
+    }
+
+    .item__button {
+      margin: 0;
+      padding: 10px 20px;
+      font-size: 25px;
+      text-decoration: none;
+      border-radius: 0;
+      box-shadow: 0;
+
+      background-color: #000;
+      display: block;
+      color: #fff;
+      text-align: center;
+    }
+
+    .item__button:hover {
+      opacity: 0.8;
+    }
+
+    .item--sold {
+      position: relative;
+      z-index: 100;
+    }
+
+    .item--sold::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: red;
+      opacity: 0.6;
+      z-index: 200;
+    }
+
+    .item--sold::after {
+      content: 'продано';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-10deg);
+      z-index: 300;
+      font-weight: 700;
+      font-size: 140px;
+      color: #fff;
+    }
+  </style>
+
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42922384 = new Ya.Metrika({ id:42922384, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42922384" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+  <div class="shop">
+    <h1>Магазин</h1>
+
+    <!-- item--sold для проданного -->
+    <section class="item">
+      <h2 class="item__title">Часы TID Watches No.1 40mm</h2>
+      <div class="item__description">
+        <p>Восхитительные часы, вобравшие в себя лучшие Шведские традиции, начинённые безотказным Японским механизмом.</p>
+        <p>Белые. В комплекте два ремешка, оба оригинальные. Кожаный довольно обшарпанный, а вот нейлоновый в идеальном состоянии. Сами часы в отличном состоянии, есть небольшая потёртость под ремешком. <a href="https://www.tidwatches.com/en/shop/watches/no-1/tid-no1-white-coal-twain-wristbandd">Cсылка на оригинал</a></p>
+      </div>
+      <img class="item__image item__image--first" src="shop/1-1.jpeg" width="200" alt="Коробка от часов">
+      <img class="item__image item__image--second" src="shop/1-2.jpeg" width="200" alt="Часы в коробке">
+      <img class="item__image item__image--third" src="shop/1-3.jpeg" width="200" alt="Часы на коробке">
+      <img class="item__image item__image--fourth" src="shop/1-4.jpeg" width="200" alt="Часы вблизи">
+      <p class="item__price">15 000 р.</p>
+      <a href="#contact" class="item__button">Купить</a>
+    </section>
+
+    <!-- item--sold для проданного -->
+    <section class="item">
+      <h2 class="item__title">Apple AirPort Express MC414RS/A</h2>
+      <div class="item__description">
+        <p>Wi-fi роутер от лучшей компании на планете. Он был так популярен, что они прекратили его производство. Перед вами один из последних представителей лучших роутеров на земле. Полный оригинальный комплект. Работает как часы.</p>
+      </div>
+      <img class="item__image item__image--first" src="shop/3-1.jpeg" width="200" alt="Коробка от роутера">
+      <img class="item__image item__image--second" src="shop/3-2.jpeg" width="200" alt="Зад коробки от роутера">
+      <img class="item__image item__image--third" src="shop/3-3.jpeg" width="200" alt="Коутре на коробке передом">
+      <img class="item__image item__image--fourth" src="shop/3-4.jpeg" width="200" alt="Роутер на коробке задом">
+      <p class="item__price">5 000 р.</p>
+      <a href="#contact" class="item__button">Купить</a>
+    </section>
+
+    <!-- item--sold для проданного -->
+    <section class="item">
+      <h2 class="item__title">Apple MacBook Air 13 Early 2014</h2>
+      <div class="item__description">
+        <p>Легенда, маэстро, лучший из лучших. Перед вами тот самый оригинальный MacBook Air, который сделал линейку этих ноутбуков великим. Именно он показал, как должен выглядеть и работать лёгкий, портативный ноутбук. Apple до сих пор не может придумать ничего лучше.</p>
+        <p>По пунктам: Core i5 1,4 Ghz с TourboBoust, 4GB оперативной памяти, 256GB SSD накопитель, 560 циклов перезарядки, полный комплект, лучшие наклейки, которые вы видели.</p>
+      </div>
+      <img class="item__image item__image--first" src="shop/2-1.jpeg" width="200" alt="Коробка от роутера">
+      <img class="item__image item__image--second" src="shop/2-3.jpeg" width="200" alt="Зад коробки от роутера">
+      <img class="item__image item__image--third" src="shop/2-8.jpeg" width="200" alt="Коутре на коробке передом">
+      <img class="item__image item__image--fourth" src="shop/2-9.jpeg" width="200" alt="Роутер на коробке задом">
+      <p class="item__price">40 000 р.</p>
+      <a href="#contact" class="item__button">Купить</a>
+    </section>
+
+    <!-- item--sold для проданного -->
+    <section class="item">
+      <h2 class="item__title">Apple TV 1 серии</h2>
+      <div class="item__description">
+        <p>Первое поколение TV приставок от Apple. Внутри фильмы, музыка и всё остальное что куплено в Aplle Store. Коннектится к wi-fi и умеет шарить экраны любой техники Aplle, а также на него можно скидывать музыку.</p>
+      </div>
+      <img class="item__image item__image--first" src="shop/6-1.jpeg" width="200" alt="Коробка от роутера">
+      <img class="item__image item__image--second" src="shop/6-2.jpeg" width="200" alt="Зад коробки от роутера">
+      <img class="item__image item__image--third" src="shop/6-3.jpeg" width="200" alt="Коутре на коробке передом">
+      <img class="item__image item__image--fourth" src="shop/6-4.jpeg" width="200" alt="Роутер на коробке задом">
+      <p class="item__price">5 000 р.</p>
+      <a href="#contact" class="item__button">Купить</a>
+    </section>
+
+    <!-- item--sold для проданного -->
+    <!-- <section class="item">
+      <h2 class="item__title">Smart Ring Nimb 2 штуки</h2>
+      <div class="item__description">
+        <p>Белое и чёрное кольцо всевластия. Про них всё можно прочитать <a href="https://nimb.com/">тут</a>. </p>
+      </div>
+      <img class="item__image item__image--first" src="shop/6-1.jpeg" width="200" alt="Коробка от роутера">
+      <img class="item__image item__image--second" src="shop/6-2.jpeg" width="200" alt="Зад коробки от роутера">
+      <img class="item__image item__image--third" src="shop/6-3.jpeg" width="200" alt="Коутре на коробке передом">
+      <img class="item__image item__image--fourth" src="shop/6-4.jpeg" width="200" alt="Роутер на коробке задом">
+      <p class="item__price">5 000 р.</p>
+      <a href="#contact" class="item__button">Купить</a>
+    </section> -->
+  </div>
+
+</body>
+</html>
